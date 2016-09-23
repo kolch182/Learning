@@ -31,11 +31,6 @@ public class SeminarDetails {
 		
 		for (Seminar seminar : seminars) {
 			
-			System.out.println("***************************************************************************************************************\n");
-			System.out.println("Seminario di " + seminar.course().name() + " (" + seminar.course().number() + ")" + " su " + seminar.course().description()+ "\n");
-			System.out.println("Il seminario si terra'  presso " + seminar.location() + " e al momento sono ci sono ancora " + seminar.seatsLeft() + " disponibili \n");
-			System.out.println("***************************************************************************************************************" + "\n\nGli studenti attualmente iscritti sono: \n");
-
 			System.out.println(new PrintFactory(seminar).printPlain());
 			System.out.println(new PrintFactory(seminar).printHtml());
 		}

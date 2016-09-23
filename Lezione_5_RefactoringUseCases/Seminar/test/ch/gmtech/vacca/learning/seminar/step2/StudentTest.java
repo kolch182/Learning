@@ -1,10 +1,8 @@
-package ch.gmtech.vacca.learning.seminar.step2.test;
+package ch.gmtech.vacca.learning.seminar.step2;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import ch.gmtech.vacca.learning.seminar.step2.Student;
 
 public class StudentTest {
 

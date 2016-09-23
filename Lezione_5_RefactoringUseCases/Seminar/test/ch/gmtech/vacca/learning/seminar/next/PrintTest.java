@@ -1,15 +1,9 @@
-package ch.gmtech.vacca.learning.seminar.next.test;
-
+package ch.gmtech.vacca.learning.seminar.next;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import ch.gmtech.vacca.learning.seminar.next.Course;
-import ch.gmtech.vacca.learning.seminar.next.PrintFactory;
-import ch.gmtech.vacca.learning.seminar.next.Seminar;
-import ch.gmtech.vacca.learning.seminar.next.Student;
 
 public class PrintTest {
 
@@ -25,7 +19,12 @@ public class PrintTest {
 
 	@Test
 	public void plain() {
-		String expected = "			** Ugo Campione ** \n" +
+		String expected = "***************************************************************************************************************\n" +
+				"Seminario di Computer science (1) su Lorem ipsum dolor sit amet\n" +
+				"Il seminario si terrà presso Zürich e al momento ci sono ancora 18 posti disponibili\n" +
+				"***************************************************************************************************************\n\n" +
+				"Gli studenti attualmente iscritti sono: \n" +
+				"			** Ugo Campione ** \n" +
 				"			** Sandra Bach ** \n";
 		assertEquals(expected, _printFactory.printPlain());
 	}
@@ -57,7 +56,7 @@ public class PrintTest {
 	public void csv() {
 		String expected = "\"1\";\"Computer science\";\"Lorem ipsum dolor sit amet\";\"Zürich\";\"18\"\n" +
 				"\"Ugo\";\"Campione\"\n" +
-				"\"Sandra\";\"Bach\"";
+				"\"Sandra\";\"Bach\"\n";
 		assertEquals(expected, _printFactory.printCsv());
 	}
 }
