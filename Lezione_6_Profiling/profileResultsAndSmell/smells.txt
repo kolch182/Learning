@@ -1,0 +1,41 @@
+- nomi classi in minuscolo(lineItem e lineItemList)
+- nomi parametri con lettere maiuscole(Unitprice e ImageID) 
+- this.ImageID non necessario il this se si cambia il nome parametro
+- protected int productId inutile. da usare private
+- metodi e varibili non usate setLineItems, getLines,setProductID,setImageID,setQty,setUnitPrice
+
+CLASSE ORDER
+- metodo equals nella classe Order da valutare ??????????????????????
+
+- rename metodo writeOrder
+
+- sostituire Vector lineItems = order.getLineItemList().getLineItems(); con lineItemList.getLineItems();  e di conseguenza eliminare l'inutile metodo getLineItemList() sulla classe Order
+
+- blocco inutile:
+
+	// calculate total for line item
+	int unitPrice = item.getUnitPrice();
+	int qty = item.getQuantity();
+	int lineitemtotal = unitPrice * qty;
+
+  si può calcolare "al volo":
+	total += lineitemtotal; -----> item.getUnitPrice() * item.getQuantity();
+
+  inoltre metterei tutto in un metodo nella classe lineItem.
+
+- stesso discorso per 
+
+	// calculate total for line item
+	int unitPrice = item.getUnitPrice();
+	int qty = item.getQuantity();
+	int productID = item.getProductID();
+	int imageID = item.getImageID();
+	int lineitemtotal = unitPrice * qty;
+
+Inoltre inserirei il calcolo del totale per linea e la stampa della singola linea in un unico ciclo while
+
+- metodo getTotal della classe Order inutile
+
+- nel metodo saveOrder variabili inutili date e getStatement
+
+- set connection ????????????????????
