@@ -9,10 +9,11 @@ public class OrderLine {
 	private int _quantity;
 	private int _unitPrice;
 
-	public OrderLine(int prodID, int imageID, int inQty) {
+	public OrderLine(int prodID, int imageID, int inQty, int unitPrice) {
 		_productId = prodID;
 		_imageId = imageID;
 		_quantity = inQty;
+		_unitPrice = unitPrice;
 	}
 
 	void PrintSingleOrderLine(PrintWriter pw) {
@@ -28,7 +29,4 @@ public class OrderLine {
 		return _unitPrice * _quantity;
 	}
 	
-    public void setUnitPrice(int unitPrice) {
-    	_unitPrice = unitPrice;
-    }
 }

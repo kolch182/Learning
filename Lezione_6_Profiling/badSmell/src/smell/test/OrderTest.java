@@ -19,11 +19,9 @@ public class OrderTest {
 	
 	@Before
 	public void setup(){
-		OrderLine firstLineItem = new OrderLine(1, 11, 5);
-		firstLineItem.setUnitPrice(5);
+		OrderLine firstLineItem = new OrderLine(1, 11, 5, 5);
 		orderLineList.add(firstLineItem);
-		OrderLine secondLineItem = new OrderLine(2, 12, 10);
-		secondLineItem.setUnitPrice(10);
+		OrderLine secondLineItem = new OrderLine(2, 12, 10, 10);
 		orderLineList.add(secondLineItem);
 
 		order = new Order(orderLineList);
