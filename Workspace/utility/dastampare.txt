@@ -1,0 +1,22 @@
+Extract method
+89-91
+Pull up method
+260-263
+Form template method
+280-287
+****
+Replace Method With Method Object
+110-113
+Substitute algorithm
+113-114
+****
+Extract class
+122-125
+Replace Temp With Query
+97-101
+Introduce Parameter Object
+238-242
+Preserve Whole Object
+232-235
+Decompose Conditionals
+192-193
