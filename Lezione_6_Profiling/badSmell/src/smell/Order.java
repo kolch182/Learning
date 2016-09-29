@@ -21,13 +21,13 @@ public class Order {
 
 	public void calculateAndPrintOrderTotal(PrintWriter pw) {
 		Iterator<OrderLine> orderLineIterator = _orderLineList.iterator();
-		int total = 0;
+		int orderLineTotal = 0;
 
 		while (orderLineIterator.hasNext()) {
 			OrderLine next = orderLineIterator.next();
-			total += next.calculateTotalLine();
+			orderLineTotal += next.calculateTotalLine();
 			next.PrintSingleOrderLine(pw);
 		}
-		pw.println("Order total = " + total);
+		pw.println("Order total = " + orderLineTotal);
 	}
 }

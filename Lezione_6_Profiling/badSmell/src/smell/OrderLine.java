@@ -17,31 +17,15 @@ public class OrderLine {
 
 	void PrintSingleOrderLine(PrintWriter pw) {
 		pw.println("Begin Line Item");
-		pw.println("Product = " + getProductID());
-		pw.println("Image = " + getImageId());
-		pw.println("Quantity = " + getQuantity());
+		pw.println("Product = " + _productId);
+		pw.println("Image = " + _imageId);
+		pw.println("Quantity = " + _quantity);
 		pw.println("Total = " + calculateTotalLine());
 		pw.println("End Line Item");
 	}
 
 	public int calculateTotalLine() {
-		return getUnitPrice() * getQuantity();
-	}
-
-	int getProductID() {
-		return _productId;
-	}
-
-	int getImageId() {
-		return _imageId;
-	}
-
-	int getQuantity() {
-		return _quantity;
-	}
-
-	int getUnitPrice() {
-		return _unitPrice;
+		return _unitPrice * _quantity;
 	}
 	
     public void setUnitPrice(int unitPrice) {
