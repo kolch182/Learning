@@ -1,5 +1,5 @@
 Extract method
-89-91
+89-95
 Pull up method
 260-263
 Form template method

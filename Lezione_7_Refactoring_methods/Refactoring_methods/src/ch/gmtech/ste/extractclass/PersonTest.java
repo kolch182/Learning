@@ -1,6 +1,6 @@
 package ch.gmtech.ste.extractclass;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ public class PersonTest {
 	}
 
 	@Test
-	public void getTelephoneNumber() throws Exception {
+	public void getTelephoneNumber() {
 		Person person = new Person();
 
 		person.setOfficeNumber("0836554561");

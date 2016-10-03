@@ -1,4 +1,4 @@
-package ch.gmtech.ste.replacemethodwithobject;
+package ch.gmtech.ste.replacemethodwithmethodobject;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,10 +1,9 @@
 package ch.gmtech.ste.extractmethod;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.Vector;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +13,7 @@ public class ExtractMethodTest {
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
 	@Before
-	public void setUp() throws Exception {
+	public void setUp(){
 		System.setOut(new PrintStream(outContent));
 	}
 

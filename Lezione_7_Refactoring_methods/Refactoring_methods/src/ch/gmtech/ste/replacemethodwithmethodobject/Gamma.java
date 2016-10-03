@@ -1,4 +1,4 @@
-package ch.gmtech.ste.replacemethodwithobject;
+package ch.gmtech.ste.replacemethodwithmethodobject;
 
 public class Gamma {
 	private final Account _account;
