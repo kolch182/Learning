@@ -17,7 +17,7 @@ class Rental {
 		return _movie;
 	}
 
-	double getCharge() {
+	protected double getCharge() {
 		double result = 0;
 		switch (getMovie().getPriceCode()) {
 		case Movie.REGULAR:
@@ -37,7 +37,7 @@ class Rental {
 		return result;
 	}
 
-	int getFrequentRenterPoints(int daysRented) {
+	protected int getFrequentRenterPoints(int daysRented) {
 		if ((getMovie().getPriceCode() == Movie.NEW_RELEASE) && daysRented > 1)
 			return 2;
 		else
