@@ -20,3 +20,5 @@ Preserve Whole Object
 232-235
 Decompose Conditionals
 192-193
+Extract subclass
+267-272
