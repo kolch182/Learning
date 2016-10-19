@@ -2,6 +2,8 @@ package ch.gmtech.ste.preservewholeobject;
 
 
 public class TempRange {
+	private final int _min;
+	private final int _max;
 
 	TempRange (int min, int max) {
 		_min = min;
@@ -21,6 +23,4 @@ public class TempRange {
 				this.getHigh();
 	}
 
-	private final int _min;
-	private final int _max;
 }

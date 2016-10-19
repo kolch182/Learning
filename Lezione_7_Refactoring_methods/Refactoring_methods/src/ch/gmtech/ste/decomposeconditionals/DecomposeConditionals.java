@@ -13,6 +13,7 @@ public class DecomposeConditionals {
 	private int _summerRate = 10;
 
 	public int chargeOnSeason(int quantity) throws ParseException{
+		
 		SUMMER_START = new SimpleDateFormat("dd.MM.yyyy").parse("01.06.2016");
 		SUMMER_END = new SimpleDateFormat("dd.MM.yyyy").parse("01.10.2016");
 		int result;

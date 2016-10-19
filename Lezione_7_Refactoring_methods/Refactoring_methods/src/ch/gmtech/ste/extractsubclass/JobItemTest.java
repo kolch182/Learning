@@ -17,9 +17,9 @@ public class JobItemTest {
 
 	@Test
 	public void getTotalPriceLabor() {
-		JobItem jobItem = new LaborItem(6, new Employee(2));
+		LaborItem laborItem = new LaborItem(6, new Employee(2));
 		
-		int totalPrice = jobItem.getTotalPrice();
+		int totalPrice = laborItem.getTotalPrice();
 		
 		assertEquals(12, totalPrice);
 	}

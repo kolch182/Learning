@@ -21,7 +21,6 @@ public class Gamma {
 		importantValue2 = (inputVal * yearToDate) + 100;
 		importantThing();
 		importantValue3 = importantValue2 * 7;
-		// and so on.
 		return importantValue3 - 2 * importantValue1;
 	}
 
