@@ -1,24 +1,20 @@
-Extract method
-89-95
-Pull up method
-260-263
-Form template method
-280-287
-****
-Replace Method With Method Object
-110-113
-Substitute algorithm
-113-114
-****
-Extract class
-122-125
-Replace Temp With Query
-97-101
-Introduce Parameter Object
-238-242
-Preserve Whole Object
-232-235
-Decompose Conditionals
-192-193
-Extract subclass
-267-272
+* Replace Data Value with Object
+141-144
+* Replace Type Code with Class
+176-181 !!
+* Replace Type Code with Subclasses
+181-184 !!
+* Replace Type Code with State/Strategy
+184-188 !!
+* Replace Array with Object
+150-153
+* Replace Conditional with Polymorphism
+205-209
+* Replace Parameter with Explicit Methods
+230-232
+* Introduce Null Object
+209-216
+* Move Method
+115-119 !!
+* Move Field
+119-122
