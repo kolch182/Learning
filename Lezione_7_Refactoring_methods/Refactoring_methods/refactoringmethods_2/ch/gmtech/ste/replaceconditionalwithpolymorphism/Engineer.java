@@ -1,4 +1,4 @@
-package ch.gmtest.ste.replaceconditionalwithpolymorphism;
+package ch.gmtech.ste.replaceconditionalwithpolymorphism;
 
 public class Engineer extends EmployeeType {
 	
