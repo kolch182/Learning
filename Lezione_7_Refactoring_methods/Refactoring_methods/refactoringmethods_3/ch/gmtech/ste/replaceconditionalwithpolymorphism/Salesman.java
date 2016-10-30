@@ -2,14 +2,11 @@ package ch.gmtech.ste.replaceconditionalwithpolymorphism;
 
 public class Salesman extends EmployeeType {
 	
-	private final int _monthlySalary = 4000;
-	private int _commission = 500;
-
 	int getType(){
 		return Employee.SALESMAN;
 	}
 
-	int payAmount() {
-		return _monthlySalary + _commission;
+	int payAmount(Employee emp) {
+		return emp.getSalary() + emp.getCommission();
 	}
 }

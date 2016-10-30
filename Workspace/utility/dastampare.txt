@@ -18,3 +18,7 @@
 115-119 !!
 * Move Field
 119-122
+* Collapse hierarchies
+279-280
+* Inline class
+125-127

@@ -6,6 +6,7 @@ public abstract class EmployeeType {
 	static final int SALESMAN = 1;
 	static final int MANAGER = 2;
 	abstract int getType();
+	abstract int payAmount(Employee emp);
 
 	static EmployeeType newType(int code) {
 		switch (code) {
