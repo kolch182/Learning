@@ -13,7 +13,7 @@ public class Account {
 
 //	nel caso in cui getInterestRate sia usato da vari metodi
 //	double interestForAmount_days (double amount, int days) {
-//		return _type.getInterestRate() * amount * days / 365;
+//		return getInterestRate() * amount * days / 365;
 //	}
 //	
 //	private void setInterestRate (double arg) {

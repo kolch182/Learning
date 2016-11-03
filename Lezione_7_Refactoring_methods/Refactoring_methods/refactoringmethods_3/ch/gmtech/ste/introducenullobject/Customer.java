@@ -2,10 +2,14 @@ package ch.gmtech.ste.introducenullobject;
 
 public class Customer {
 	private String _name = "Stefano";
-	private PaymentHistory _history = new PaymentHistory();
+	private PaymentHistory _history;
 	
 	protected Customer() {} //needed by the NullCustomer perchè??? 
 
+	public void initHistory(){
+		_history = new PaymentHistory();
+	}
+	
 	static Customer newNull() {
 		return new NullCustomer();
 	}

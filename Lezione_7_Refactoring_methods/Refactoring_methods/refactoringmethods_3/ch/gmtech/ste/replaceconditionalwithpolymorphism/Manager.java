@@ -2,11 +2,11 @@ package ch.gmtech.ste.replaceconditionalwithpolymorphism;
 
 public class Manager extends EmployeeType {
 	
-	int getType(){
+	int getTypeCode() {
 		return Employee.MANAGER;
 	}
-
-	int payAmount(Employee emp) {
-		return emp.getSalary() + emp.getBonus();
+	
+	public int payAmount(Employee emp) {
+		return emp.getMonthlySalary() + emp.getBonus();
 	}
 }

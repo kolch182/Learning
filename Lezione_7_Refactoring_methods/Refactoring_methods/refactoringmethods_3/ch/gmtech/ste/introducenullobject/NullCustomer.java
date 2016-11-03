@@ -10,10 +10,6 @@ public class NullCustomer extends Customer {
 		return "occupant";
 	}
 	
-	public PaymentHistory getHistory() {
-		return new NullPaymentHistory();
-	}
-	
 	public String setPlan() {
 		return "basic";
 	}

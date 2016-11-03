@@ -6,7 +6,7 @@ public class Account {
 
 	double bankCharge() {
 		double result = 4.5;
-		if (getDaysOverdrawn() > 0) result += getType().overdraftCharge(this);
+		if (getDaysOverdrawn() > 0) result += _type.overdraftCharge(this);
 		return result;
 	}
 

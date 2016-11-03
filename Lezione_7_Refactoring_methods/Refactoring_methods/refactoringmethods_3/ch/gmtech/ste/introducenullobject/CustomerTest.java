@@ -26,6 +26,7 @@ public class CustomerTest {
 		Sites site = new Sites();
 		site.initCustomer();
 		Customer customer = site.getCustomer();
+		customer.initHistory();
 		
 		String customerName = customer.getName();
 		String setPlan = customer.setPlan();
