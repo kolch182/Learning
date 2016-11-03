@@ -2,7 +2,6 @@ package ch.gmtech.ste.introducenullobject;
 
 public class Customer {
 	private String _name = "Stefano";
-	private String _plan;
 	private PaymentHistory _history = new PaymentHistory();
 	
 	protected Customer() {} //needed by the NullCustomer perchè??? 
@@ -16,12 +15,11 @@ public class Customer {
 	}
 
 	public String setPlan() {
-		_plan = BillingPlan.special(); 
-		return _plan;
+		return BillingPlan.special();
 	}
 	
 	public PaymentHistory getHistory() {
-		return _history;
+		return (_history == null) ? PaymentHistory.newNull(): _history;
 	}
 	
 	public boolean isNull() {

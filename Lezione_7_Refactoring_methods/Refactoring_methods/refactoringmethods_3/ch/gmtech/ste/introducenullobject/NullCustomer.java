@@ -2,8 +2,6 @@ package ch.gmtech.ste.introducenullobject;
 
 public class NullCustomer extends Customer {
 	
-	private String _plan;
-	
 	public boolean isNull() {
 		return true;
 	}
@@ -17,7 +15,6 @@ public class NullCustomer extends Customer {
 	}
 	
 	public String setPlan() {
-		_plan = "basic";
-		return _plan;
+		return "basic";
 	}
 }
