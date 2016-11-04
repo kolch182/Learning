@@ -12,10 +12,10 @@ public class Employee {
 	private int _bonus = 1000;
 	
 	public int payAmount() {
-		_type.payAmount(this);
+		return _type.payAmount(this);
 	}
 
-	private int getType() {
+	public int getType() {
 		return _type.getTypeCode();
 	}
 
