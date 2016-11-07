@@ -1,24 +1,10 @@
-* Replace Data Value with Object
-141-144
-* Replace Type Code with Class
-176-181 !!
-* Replace Type Code with Subclasses
-181-184 !!
-* Replace Type Code with State/Strategy
-184-188 !!
-* Replace Array with Object
-150-153
-* Replace Conditional with Polymorphism
-205-209
-* Replace Parameter with Explicit Methods
-230-232
-* Introduce Null Object
-209-216
-* Move Method
-115-119 !!
-* Move Field
-119-122
-* Collapse hierarchies
-279-280
-* Inline class
-125-127
+* Hide Delegate
+127-130 !!!
+* Remove Middle Man
+130-131
+* Replace Delegation with Inheritance
+289-292
+* Change Bidirectional Association to Unidirectional
+162-166
+* Replace Inheritance with Delegation
+287-289
