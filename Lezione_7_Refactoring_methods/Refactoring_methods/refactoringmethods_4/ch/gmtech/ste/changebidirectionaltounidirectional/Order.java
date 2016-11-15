@@ -1,9 +1,16 @@
 package ch.gmtech.ste.changebidirectionaltounidirectional;
 
+import java.util.LinkedList;
+
 public class Order {
+	
+	private LinkedList <Customer> _customers = Customer.getInstances();
 
 	Customer getCustomer() {
-		return _customer;
+		for (Customer customer : _customers) {
+			if (customer.containsOrder(this)) return customer;
+		}
+		return null;
 	}
 
 	void setCustomer(Customer customer) {
