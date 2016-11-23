@@ -1,10 +1,18 @@
-* Hide Delegate
-127-130 !!!
-* Remove Middle Man
-130-131
-* Replace Delegation with Inheritance
-289-292
-* Change Bidirectional Association to Unidirectional
-162-166
-* Replace Inheritance with Delegation
-287-289
+* Introduce Foreign Method
+131-133  !!!
+* Introduce Local Extension
+133-137
+* Encapsulate Field
+167 !!!
+* Encapsulate Collection
+168-172
+* Remove Setting Method
+242-245 !!!
+* Hide Method
+245-246
+* Push Down Method
+266 !!!
+* Push Down Field
+267
+* Introduce Assertion
+216-219
