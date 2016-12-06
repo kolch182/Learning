@@ -7,5 +7,5 @@ public class Account {
 	Account(String id) {
 		_id = id;
 	}
-
+	
 }
