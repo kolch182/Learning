@@ -1,0 +1,17 @@
+1474984741279	Delete element
+1474984857538	Rename type 'OrderLine'
+1474985871689	Extract local variable 'calculateAndPrintSingleOrderLine'
+1474991851784	Extract method 'extracted'
+1474991966997	Rename method 'calculateAndPrintSingleOrderLine'
+1475040779387	Rename method 'extracted'
+1475046599462	Rename type 'lineItem'
+1475061278394	Rename local variable 'aThat'
+1475061294442	Rename local variable 'that'
+1475061889456	Rename local variable 'i'
+1475063520578	Rename local variable 'order1'
+1475063533157	Rename local variable 'order2'
+1475064217482	Rename local variable 'orderLines'
+1475067961797	Rename field 'orderLines'
+1475068020129	Rename field 'orderLinesList'
+1475068035844	Delete element
+1475157214790	Rename local variable 'total'

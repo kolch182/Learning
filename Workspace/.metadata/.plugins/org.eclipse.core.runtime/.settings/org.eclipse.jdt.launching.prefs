@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_CONNECT_TIMEOUT=20000
+org.eclipse.jdt.launching.PREF_DEFAULT_ENVIRONMENTS_XML=
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1424337632986" defaultVMConnector\="">\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\n<vm id\="1424337632986" name\="jdk1.6.0_43" path\="/usr/lib/jvm/jdk1.6.0_43" vmargs\="-Dbasedir\=${workspace_loc\:sis-dependency} -Dusername\=junit -Dpassword\=junitTest -Dhost\=localhost -Djboss4DS\=/jboss/server/default/deploy/sisOracle-ds.xml -Djava.naming.factory.initial\=org.jnp.interfaces.NamingContextFactory -DdontSendJMS\=true -Dxml2pdf.url\=http\://ssx01\:1234/xml2pdf -DjobBuilder.properties\=${workspace_loc\:sis-dependency}/jbossServer/jobBuilder.properties"/>\n</vmType>\n</vmSettings>\n
+org.eclipse.jdt.launching.only_include_exported_classpath_entries=false

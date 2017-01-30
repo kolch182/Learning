@@ -1,6 +1,6 @@
 package ch.gmtech.ste.learning.seminar.next;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

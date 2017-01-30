@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="refactoringmethods"/>
+	<classpathentry kind="src" path="refactoring_methods_5"/>
+	<classpathentry kind="src" path="refactoringmethods_4"/>
+	<classpathentry kind="src" path="refactoringmethods_3"/>
+	<classpathentry kind="src" path="refactoringmethods_2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/Data/Reporting/Stefano/Learning/Workspace/utility/Capitolo 3/spring-core-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
