@@ -12,19 +12,19 @@ public class PrintFactory {
 		_seminar = seminar;
 	}
 
-	public String printPlain() {
+	public String printPlain(){
 
 		return new Plain().print(_seminar);
 
 	}
 
-	public String printHtml() {
+	public String printHtml(){
 
 		return new Html().print(_seminar);
 
 	}
 
-	public String printCsv() {
+	public String printCsv(){
 		
 		return new Csv().print(_seminar);
 		

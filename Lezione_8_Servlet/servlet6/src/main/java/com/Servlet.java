@@ -47,11 +47,10 @@ public class Servlet extends HttpServlet {
 
 		initialize();
 		
-		System.out.println("RESULT " + req.getRequestURI());
-		
 		if(addresses.get(req.getRequestURI()) == null){
 			resp.getWriter().write("<h1>Page not found</h1>");
-		}else if(addresses.get(req.getRequestURI()).contains("/csv")){
+		}else if(req.getRequestURI().contains("/csv")){
+			resp.getWriter().write(addresses.get(req.getRequestURI()));
 			downloadCsv(resp);
 		}else{
 			resp.getWriter().write(addresses.get(req.getRequestURI()));
@@ -62,7 +61,7 @@ public class Servlet extends HttpServlet {
 
 	private void downloadCsv(HttpServletResponse resp) {
 		resp.setContentType("text/csv");
-		resp.setHeader("Content-Disposition","attachment;filename=course.csv");
+		resp.setHeader("Content-Disposition","attachment;filename=\"seminar.csv\" ");
 		try
 		{
 		    OutputStream outputStream = resp.getOutputStream();

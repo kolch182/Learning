@@ -44,4 +44,6 @@
 <fullyQualifiedTypeName name="ch.gmtech.ste.removesettingmethod.AccountVariation"/>
 <fullyQualifiedTypeName name="ch.gmtech.ste.learning.seminar.next.print.Plain"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="ch.gmtech.ste.learning.seminar.next.print.SeminarPrinter"/>
 </qualifiedTypeNameHistroy>
