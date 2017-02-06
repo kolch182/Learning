@@ -10312,3 +10312,772 @@ Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/s
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2017-01-31 15:13:33.431
 !MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:01:21.328
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:01:21.330
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:02:56.498
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:02:56.500
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:03:27.219
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:03:27.222
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:05:14.318
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:05:14.320
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:06:41.051
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:06:41.053
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:07:41.478
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:07:41.480
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 0 2017-02-06 13:07:53.950
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:07:54.172
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:07:54.175
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 0 2017-02-06 13:08:04.021
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+
+!ENTRY org.eclipse.ui 4 4 2017-02-06 13:08:07.073
+!MESSAGE An internal error has occurred.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getSelectionFromEditorInput(SelectionUtils.java:317)
+	at org.eclipse.egit.ui.internal.selection.SelectionUtils.getStructuredSelection(SelectionUtils.java:128)
+	at org.eclipse.egit.ui.internal.selection.SelectionPropertyTester.getStructuredSelection(SelectionPropertyTester.java:93)
+	at org.eclipse.egit.ui.internal.selection.SelectionPropertyTester.test(SelectionPropertyTester.java:50)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:58)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:99)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:70)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.ReferenceExpression.evaluate(ReferenceExpression.java:70)
+	at org.eclipse.ui.internal.handlers.HandlerActivation.evaluate(HandlerActivation.java:113)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService$HandlerSelectionFunction.compute(LegacyHandlerService.java:117)
+	at org.eclipse.e4.core.internal.contexts.ValueComputation.get(ValueComputation.java:61)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.internalGet(EclipseContext.java:225)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.get(EclipseContext.java:213)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.lookUpHandler(HandlerServiceImpl.java:100)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.handlerChanged(E4HandlerProxy.java:106)
+	at org.eclipse.core.commands.AbstractHandler.fireHandlerChanged(AbstractHandler.java:78)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.access$0(HandlerProxy.java:1)
+	at org.eclipse.ui.internal.handlers.HandlerProxy$1.propertyChange(HandlerProxy.java:255)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:145)
+	at org.eclipse.ui.internal.services.EvaluationService.invalidate(EvaluationService.java:299)
+	at org.eclipse.ui.internal.services.EvaluationService.dispose(EvaluationService.java:213)
+	at org.eclipse.ui.internal.services.ServiceLocator.dispose(ServiceLocator.java:137)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3139)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1167)
+	at org.eclipse.ui.internal.Workbench.access$21(Workbench.java:1079)
+	at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1410)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1407)
+	at org.eclipse.ui.internal.WorkbenchConfigurer.emergencyClose(WorkbenchConfigurer.java:174)
+	at org.eclipse.ui.internal.ide.IDEWorkbenchErrorHandler.closeWorkbench(IDEWorkbenchErrorHandler.java:253)
+	at org.eclipse.ui.internal.ide.IDEWorkbenchErrorHandler.handleException(IDEWorkbenchErrorHandler.java:155)
+	at org.eclipse.ui.internal.ide.IDEWorkbenchErrorHandler.access$0(IDEWorkbenchErrorHandler.java:146)
+	at org.eclipse.ui.internal.ide.IDEWorkbenchErrorHandler$1.runInUIThread(IDEWorkbenchErrorHandler.java:121)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3774)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3412)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.core.jobs 2 2 2017-02-06 13:08:08.838
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: jetbrains.teamcity.EclipseIDEAlarm$1
+!SESSION 2017-02-06 13:08:10.921 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.server.preview 4 0 2017-02-06 13:08:12.315
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.server.preview [758]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.server.preview [osgi.identity; osgi.identity="org.eclipse.wst.server.preview"; type="osgi.bundle"; version:Version="1.1.300.v201309182039"; singleton:="true"] because it is exposed to package 'javax.servlet.annotation' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.server.preview [osgi.identity; osgi.identity="org.eclipse.wst.server.preview"; type="osgi.bundle"; version:Version="1.1.300.v201309182039"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.servlet)(&(bundle-version>=2.6.0)(!(bundle-version>=3.1.0))))
+     |
+    provide: osgi.wiring.bundle: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+
+Chain 2:
+  org.eclipse.wst.server.preview [osgi.identity; osgi.identity="org.eclipse.wst.server.preview"; type="osgi.bundle"; version:Version="1.1.300.v201309182039"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.jetty.server)(&(bundle-version>=8.0.4)(!(bundle-version>=9.0.0))))
+     |
+    provide: osgi.wiring.bundle; osgi.wiring.bundle="org.eclipse.jetty.server"; bundle-version:Version="8.1.16.v20140903"
+  org.eclipse.jetty.server [osgi.identity; osgi.identity="org.eclipse.jetty.server"; type="osgi.bundle"; version:Version="8.1.16.v20140903"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.io)(&(version>=8.1.0)(!(version>=9.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.io; uses:=org.eclipse.jetty.util.log
+  org.eclipse.jetty.io [osgi.identity; osgi.identity="org.eclipse.jetty.io"; type="osgi.bundle"; version:Version="8.1.16.v20140903"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.util.log)(&(version>=8.1.0)(!(version>=9.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.util.log; uses:=javax.servlet
+  org.eclipse.jetty.util [osgi.identity; osgi.identity="org.eclipse.jetty.util"; type="osgi.bundle"; version:Version="8.1.16.v20140903"]
+    import: (&(osgi.wiring.package=javax.servlet)(version>=2.6.0))
+     |
+    export: osgi.wiring.package: javax.servlet; uses:=javax.servlet.annotation
+    export: osgi.wiring.package=javax.servlet.annotation
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jface 2 0 2017-02-06 13:08:22.830
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-02-06 13:08:22.830
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@456765bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7487ee4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jdt.core 4 4 2017-02-06 13:08:28.624
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: servlet6
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/servlet6/target/classes/ch'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2017-02-06 13:08:28.625
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2017-02-06 13:08:28.625
+!MESSAGE Could not delete '/servlet6/target/classes/ch'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:186)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2017-02-06 13:08:28.626
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:28.626
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:08:30.179
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:08:30.184
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jdt.core 4 4 2017-02-06 13:08:31.316
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: servlet6
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/servlet6/target/classes/ch'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397570000000d.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975300000005.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975c00000008.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975a0000000b.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975b00000009.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs00000000000397590000000a.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975600000006.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975400000007.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397550000000c.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test/.nfs000000000003975e0000000e.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2017-02-06 13:08:31.316
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2017-02-06 13:08:31.316
+!MESSAGE Could not delete '/servlet6/target/classes/ch'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397570000000d.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975300000005.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975c00000008.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975a0000000b.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975b00000009.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs00000000000397590000000a.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975600000006.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975400000007.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397550000000c.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test/.nfs000000000003975e0000000e.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2017-02-06 13:08:31.317
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397570000000d.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975300000005.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975c00000008.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975a0000000b.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975b00000009.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs00000000000397590000000a.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975600000006.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975400000007.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397550000000c.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test/.nfs000000000003975e0000000e.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:31.317
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+
+!ENTRY org.eclipse.jdt.core 4 4 2017-02-06 13:08:57.561
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: servlet6
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/servlet6/target/classes/ch'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397570000000d.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975300000005.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975c00000008.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975a0000000b.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975b00000009.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs00000000000397590000000a.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975600000006.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975400000007.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397550000000c.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test/.nfs000000000003975e0000000e.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2017-02-06 13:08:57.562
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete '/servlet6/target/classes/ch'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders_aroundBody0(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:87)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397570000000d.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975300000005.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975c00000008.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975a0000000b.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975b00000009.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs00000000000397590000000a.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975600000006.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975400000007.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397550000000c.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test/.nfs000000000003975e0000000e.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+Contains: Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2017-02-06 13:08:57.562
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397570000000d.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975300000005.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975c00000008.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975a0000000b.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs000000000003975b00000009.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print/.nfs00000000000397590000000a.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/print.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975600000006.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs000000000003975400000007.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next/.nfs00000000000397550000000c.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar/next.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning/seminar.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/learning.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test/.nfs000000000003975e0000000e.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste/test.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech/ste.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch/gmtech.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2017-02-06 13:08:57.562
+!MESSAGE Could not delete: /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servlet6/target/classes/ch.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:08:57.569
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:08:57.572
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:10:01.984
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:10:01.987
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:10:42.264
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:10:42.266
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:17:08.812
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:17:08.814
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:17:26.787
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:17:26.793
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:17:44.334
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:17:44.336
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:20:19.651
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:20:19.655
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:20:28.529
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:20:28.532
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:20:33.999
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:20:34.000
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:21:01.513
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:21:01.514
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:22:02.943
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:22:02.945
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:22:04.636
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:22:04.637
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:22:34.415
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:22:34.417
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:22:35.512
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:22:35.514
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:22:51.879
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:22:51.881
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:22:53.028
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:22:53.029
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:23:07.706
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:23:07.709
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:23:08.814
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:23:08.815
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:23:23.222
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:23:23.225
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:23:24.397
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:23:24.398
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:24:20.331
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:24:20.334
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:24:23.090
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:24:23.091
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:24:36.826
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:24:36.830
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:26:47.055
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-06 13:26:47.057
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:26:48.944
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}
+
+!ENTRY org.eclipse.core.resources 4 368 2017-02-06 13:26:48.945
+!MESSAGE Variable references non-existent resource : ${workspace_loc:sis-dependency}

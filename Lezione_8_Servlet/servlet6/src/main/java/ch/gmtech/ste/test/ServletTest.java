@@ -1,6 +1,6 @@
 package ch.gmtech.ste.test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -42,4 +42,13 @@ public class ServletTest {
 		
 		assertEquals(expected, page.getContent());
 	}
+	
+//			EcmaError: lineNumber=[3] column=[0] lineSource=[<no source>] name=[TypeError] sourceName=[http://localhost:8080/js/jquery.min.js] message=[TypeError: Cannot find function addEventListener in object [object]. (http://localhost:8080/js/jquery.min.js#3)]
+//			com.gargoylesoftware.htmlunit.ScriptException: TypeError: Cannot find function addEventListener in object [object]. (http://localhost:8080/js/jquery.min.js#3)				
+//	@Test
+//	public void form() throws Exception {
+//		HtmlPage page = webClient.getPage("http://localhost:8080/try/bootstrap");
+//
+//		assertEquals("Computer science", page.getBody());
+//	}
 }
