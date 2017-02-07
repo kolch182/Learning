@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="ServletTest" project="servlet6" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="ch.gmtech.ste.test.ServletTest" time="0.198">
-    <testcase name="csv" classname="ch.gmtech.ste.test.ServletTest" time="0.106"/>
-    <testcase name="html" classname="ch.gmtech.ste.test.ServletTest" time="0.081"/>
-    <testcase name="plain" classname="ch.gmtech.ste.test.ServletTest" time="0.011"/>
-  </testsuite>
-</testrun>

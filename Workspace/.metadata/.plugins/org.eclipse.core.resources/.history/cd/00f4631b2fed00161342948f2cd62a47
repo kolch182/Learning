@@ -39,7 +39,7 @@ public class Servlet extends HttpServlet {
 		addresses.put("/html", _printFactory.printHtml());
 		addresses.put("/plain", _printFactory.printPlain());
 		addresses.put("/csv", _printFactory.printCsv());
-		addresses.put("/course/create", _printFactory.showForm());
+		addresses.put("/try/bootstrap", _printFactory.showForm());
 		addresses.put("/try/me", "<h1>you did it!</h1>");
 	}
 
