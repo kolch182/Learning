@@ -64,6 +64,7 @@ public class Servlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
+			
 		resp.getWriter().write(addresses.get(req.getRequestURI()));
 	}
 

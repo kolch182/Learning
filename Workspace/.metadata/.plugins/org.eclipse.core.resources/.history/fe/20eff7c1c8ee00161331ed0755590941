@@ -45,7 +45,7 @@ public class PrintFactory {
 			    "  		<div class='row'>                                                                                                                        " +
 			    "  			<div class='col-md-6 col-md-offset-3'>                                                                                               " +
 			    "  				<h1 class='page-header text-center'>Course Form</h1>                                                                    " +
-			    "				<form id= 'courseForm' class='form-horizontal' role='form' method='post' action='/try/me'>                                                      		 " +
+			    "				<form id= 'courseForm' class='form-horizontal' role='form' method='post' action='me'>                                                      		 " +
 			    "					<div class='form-group'>                                                                                                     " +
 			    "						<label for='name' class='col-sm-2 control-label'>Name</label>                                                            " +
 			    "						<div class='col-sm-10'>                                                                                                  " +

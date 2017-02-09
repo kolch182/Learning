@@ -11251,3 +11251,97 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+!SESSION 2017-02-09 14:04:52.709 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_79
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -data /Data/Reporting/Stefano/Learning/Workspace -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.server.preview 4 0 2017-02-09 14:04:54.780
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.wst.server.preview [758]
+  Bundle was not resolved because of a uses contraint violation.
+  org.osgi.service.resolver.ResolutionException: Uses constraint violation. Unable to resolve resource org.eclipse.wst.server.preview [osgi.identity; osgi.identity="org.eclipse.wst.server.preview"; type="osgi.bundle"; version:Version="1.1.300.v201309182039"; singleton:="true"] because it is exposed to package 'javax.servlet.annotation' from resources javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"] and javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.wst.server.preview [osgi.identity; osgi.identity="org.eclipse.wst.server.preview"; type="osgi.bundle"; version:Version="1.1.300.v201309182039"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=javax.servlet)(&(bundle-version>=2.6.0)(!(bundle-version>=3.1.0))))
+     |
+    provide: osgi.wiring.bundle: javax.servlet
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.0.0.v201112011016"]
+
+Chain 2:
+  org.eclipse.wst.server.preview [osgi.identity; osgi.identity="org.eclipse.wst.server.preview"; type="osgi.bundle"; version:Version="1.1.300.v201309182039"; singleton:="true"]
+    require: (&(osgi.wiring.bundle=org.eclipse.jetty.server)(&(bundle-version>=8.0.4)(!(bundle-version>=9.0.0))))
+     |
+    provide: osgi.wiring.bundle; osgi.wiring.bundle="org.eclipse.jetty.server"; bundle-version:Version="8.1.16.v20140903"
+  org.eclipse.jetty.server [osgi.identity; osgi.identity="org.eclipse.jetty.server"; type="osgi.bundle"; version:Version="8.1.16.v20140903"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.io)(&(version>=8.1.0)(!(version>=9.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.io; uses:=org.eclipse.jetty.util.log
+  org.eclipse.jetty.io [osgi.identity; osgi.identity="org.eclipse.jetty.io"; type="osgi.bundle"; version:Version="8.1.16.v20140903"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.util.log)(&(version>=8.1.0)(!(version>=9.0.0))))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.util.log; uses:=javax.servlet
+  org.eclipse.jetty.util [osgi.identity; osgi.identity="org.eclipse.jetty.util"; type="osgi.bundle"; version:Version="8.1.16.v20140903"]
+    import: (&(osgi.wiring.package=javax.servlet)(version>=2.6.0))
+     |
+    export: osgi.wiring.package: javax.servlet; uses:=javax.servlet.annotation
+    export: osgi.wiring.package=javax.servlet.annotation
+  javax.servlet [osgi.identity; osgi.identity="javax.servlet"; type="osgi.bundle"; version:Version="3.1.0.v20140303-1611"]
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jface 2 0 2017-02-09 14:05:05.820
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-02-09 14:05:05.821
+!MESSAGE A conflict occurred for CTRL+F4:
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.eclipse.ui.file.close,Close,
+		Close the active editor,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@434f94dd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F4,
+	ParameterizedCommand(Command(org.scala.tools.eclipse.search.commands.OpenTypeHierarchy,Open Type Hierarchy,
+		Open Type Hierarchy,
+		Category(org.scala.tools.eclipse.search.commands,Search - Scala,Search - Scala,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1db65bb1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:05:14.016
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:05:14.022
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:06:17.328
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:06:17.342
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:07:50.367
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:07:50.370
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:09:13.718
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-02-09 14:09:13.721
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
