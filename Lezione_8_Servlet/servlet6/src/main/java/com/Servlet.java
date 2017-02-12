@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,6 +23,12 @@ public class Servlet extends HttpServlet {
 
 	private PrintFactory _printFactory;
 	private Map<String,String> addresses = new HashMap<String,String>();
+	
+	@Override
+	public void init() throws ServletException {
+		super.init();
+		initialize();
+	}
 	
 	private void initialize(){
 		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
@@ -47,7 +54,6 @@ public class Servlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-		initialize();
 		
 		if(addresses.get(req.getRequestURI()) == null){
 			resp.getWriter().write("<h1>Page not found</h1>");
