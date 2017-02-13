@@ -23,7 +23,8 @@ public class Servlet extends HttpServlet {
 	}
 
 	private void initialize(){
-		addresses.put("/course/create", new Form().show());
+		Form form = new Form();
+		addresses.put("/course/create", form.header() + form.renderBody());
 		addresses.put("/try/me", "<h1>you did it!</h1>");
 	}
 

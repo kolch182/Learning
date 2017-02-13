@@ -40,5 +40,10 @@
 			<artifactId>jsp-2.1</artifactId>
 			<version>6.0.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.j2html</groupId>
+			<artifactId>j2html</artifactId>
+			<version>0.7</version>
+		</dependency>
 	</dependencies>
 </project>
