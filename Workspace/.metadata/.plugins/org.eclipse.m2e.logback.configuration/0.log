@@ -1277,3 +1277,175 @@ org.eclipse.core.runtime.CoreException: Launch configuration ServletTest referen
 2017-02-13 14:52:22,494 [Worker-351] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
 2017-02-13 14:52:22,495 [Worker-351] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-02-13 14:52:22,497 [Worker-351] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:16:39,714 [Worker-681] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:16:39,718 [Worker-681] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:16:39,719 [Worker-681] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:16:39,722 [Worker-681] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:18:03,373 [Worker-684] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for servlet6
+2017-02-17 13:18:04,007 [Worker-687] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:18:04,008 [Worker-687] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:18:04,010 [Worker-687] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:18:04,011 [Worker-687] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:23:39,010 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:23:39,011 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:23:39,013 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:23:39,014 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:25:48,280 [Worker-686] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:25:48,282 [Worker-686] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:25:48,283 [Worker-686] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:25:48,285 [Worker-686] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:28:10,094 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:28:10,098 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:28:10,100 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:28:10,103 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:29:11,305 [Worker-686] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:29:11,307 [Worker-686] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:29:11,308 [Worker-686] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:29:11,310 [Worker-686] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:29:20,137 [Worker-686] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:29:20,138 [Worker-686] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:29:20,140 [Worker-686] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:29:20,141 [Worker-686] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:29:50,340 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:29:50,342 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:29:50,345 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:29:50,346 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:30:02,870 [Worker-684] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:30:02,872 [Worker-684] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:30:02,874 [Worker-684] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:30:02,876 [Worker-684] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:30:13,277 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:30:13,279 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:30:13,280 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:30:13,282 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:32:52,289 [Worker-690] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:32:52,291 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:32:52,292 [Worker-690] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:32:52,294 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:33:43,110 [Worker-681] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:33:43,111 [Worker-681] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:33:43,113 [Worker-681] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:33:43,115 [Worker-681] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:34:39,457 [Worker-687] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:34:39,459 [Worker-687] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:34:39,461 [Worker-687] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:34:39,462 [Worker-687] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:35:16,237 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:35:16,239 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:35:16,240 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:35:16,242 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:39:05,217 [Worker-690] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:39:05,218 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:39:05,220 [Worker-690] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:39:05,222 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:41:07,808 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:41:07,810 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:41:07,812 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:41:07,814 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:43:02,772 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:43:02,774 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:43:02,776 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:43:02,778 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:44:26,757 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:44:26,785 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:44:26,787 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:44:26,789 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:47:42,197 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:47:42,198 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:47:42,200 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:47:42,202 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:52:25,866 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:52:25,867 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:52:25,869 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:52:25,870 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:52:34,961 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:52:34,963 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:52:34,965 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:52:34,967 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:55:10,485 [Worker-695] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:55:10,487 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:55:10,488 [Worker-695] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:55:10,490 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 13:56:12,814 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:56:12,815 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 13:56:12,817 [Worker-685] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 13:56:12,819 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:00:06,387 [Worker-694] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:00:06,402 [Worker-694] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:00:06,403 [Worker-694] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:00:06,405 [Worker-694] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:02:29,655 [Worker-693] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:02:29,656 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:02:29,658 [Worker-693] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:02:29,660 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:07:29,091 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:07:29,093 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:07:29,094 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:07:29,096 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:10:30,774 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:10:30,776 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:10:30,778 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:10:30,780 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:12:51,788 [Worker-694] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:12:51,790 [Worker-694] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:12:51,792 [Worker-694] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:12:51,794 [Worker-694] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:13:46,817 [Worker-699] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:13:46,819 [Worker-699] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:13:46,821 [Worker-699] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:13:46,823 [Worker-699] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:17:28,030 [Worker-699] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:17:28,031 [Worker-699] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:17:28,033 [Worker-699] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:17:28,035 [Worker-699] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:27:49,487 [Worker-697] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:27:49,491 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:27:49,493 [Worker-697] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:27:49,495 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:28:28,079 [Worker-688] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.j2html:j2html:0.7
+2017-02-17 14:28:28,337 [Worker-702] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:28:28,340 [Worker-702] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:28:28,342 [Worker-702] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:28:28,343 [Worker-702] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:28:43,566 [Worker-705] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:28:43,568 [Worker-705] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:28:43,570 [Worker-705] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:28:43,572 [Worker-705] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:29:30,516 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-8.1.16.v20140903
+2017-02-17 14:29:30,541 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@127.0.0.1:17469
+2017-02-17 14:30:58,496 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:30:58,499 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:30:58,500 [Worker-689] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:30:58,502 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:31:29,478 [Worker-700] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:31:29,479 [Worker-700] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:31:29,480 [Worker-700] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:31:29,482 [Worker-700] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:33:57,187 [Worker-704] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:33:57,189 [Worker-704] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:33:57,191 [Worker-704] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:33:57,193 [Worker-704] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:34:05,992 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:05,994 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:34:05,995 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:05,997 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:34:12,045 [Worker-703] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:12,047 [Worker-703] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:34:12,049 [Worker-703] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:12,051 [Worker-703] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:34:55,833 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:55,835 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:34:55,837 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:55,839 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:34:59,827 [Worker-697] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:59,829 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:34:59,831 [Worker-697] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:34:59,833 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:35:15,494 [Worker-704] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:35:15,496 [Worker-704] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:35:15,497 [Worker-704] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:35:15,499 [Worker-704] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources
+2017-02-17 14:36:00,683 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:36:00,684 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/main/resources
+2017-02-17 14:36:00,686 [Worker-688] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-17 14:36:00,687 [Worker-688] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Data/Reporting/Stefano/Learning/Lezione_8_Servlet/servletForm/src/test/resources

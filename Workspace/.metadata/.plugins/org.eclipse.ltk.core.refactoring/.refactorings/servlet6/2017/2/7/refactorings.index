@@ -1,2 +1,4 @@
 1486989688476	Delete element
 1486992907086	Extract local variable 'form'
+1487337447773	Extract method 'createInput'
+1487338495670	Extract method 'createSubmit'
