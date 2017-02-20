@@ -1,8 +1,28 @@
 package ch.gmtech.ste.learning.html;
-import static j2html.TagCreator.*;
+import static j2html.TagCreator.body;
+import static j2html.TagCreator.div;
+import static j2html.TagCreator.h1;
+import static j2html.TagCreator.head;
+import static j2html.TagCreator.html;
+import static j2html.TagCreator.input;
+import static j2html.TagCreator.label;
+import static j2html.TagCreator.link;
+import static j2html.TagCreator.meta;
+import static j2html.TagCreator.title;
+
+import java.util.ArrayList;
+
+import ch.gmtech.ste.learning.seminar.Seminar;
 import j2html.tags.ContainerTag;
 
-public class Form{
+public class HtmlPage{
+	
+	private ArrayList<Seminar> _seminars;
+	private String render;
+
+	public HtmlPage(ArrayList<Seminar> seminars){
+		_seminars = seminars;
+	}
 
 	public String header(){
 
@@ -19,28 +39,16 @@ public class Form{
 
 	public String renderBody(){
 
-		return body().with(
-				div().withClass("container").with(
-					div().withClass("row").with(
-						div().withClass("col-md-6 col-md-offset-3").with(
-							h1("Course Form").withClass("page-header text-center"),
-								form().withId("courseForm").withClass("form-horizontal").withMethod("post").withAction("/course").with(
-		
-									createInput("Name","text","form-control","courseName","name","Course Name"),
-									createInput("Number","number","form-control","number","number","Number"),
-									createInput("Location","text","form-control","location","location","Location"),
-									createInput("Description","text","form-control","description","description","Description"),
-									createInput("StartDate","date","form-control","startdate","startdate","StartDate"),
-									createSubmit(),
-									script().withSrc("/js/jquery.min.js"),
-									script().withSrc("/js/bootstrap.min.js")
-								)
-							)
-						)
+		for(Seminar seminar : _seminars) {
+				render = body().with(
+					div().withId("Seminars").with(
+						h1(seminar.location())
 					)
 				)
-				.render()
-				;
+				.render();
+		}
+		;
+				return render;
 	}
 
 	private ContainerTag createSubmit() {
