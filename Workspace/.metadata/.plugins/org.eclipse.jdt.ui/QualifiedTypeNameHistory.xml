@@ -46,4 +46,6 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="ch.gmtech.ste.learning.seminar.next.print.SeminarPrinter"/>
+<fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
+<fullyQualifiedTypeName name="j2html.TagCreator"/>
 </qualifiedTypeNameHistroy>
