@@ -1,0 +1,4 @@
+1487687925535	Rename field '_seminars'
+1487687937008	Rename local variable 'seminars'
+1487692194438	Extract method 'createSeminar'
+1487765660185	Extract method 'normalizeUrl'

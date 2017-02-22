@@ -1,12 +1,14 @@
 package com;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -20,12 +22,10 @@ import ch.gmtech.ste.learning.seminar.Seminar;
 public class Servlet extends HttpServlet {
 
 	private Map<String,String> addresses = new HashMap<String,String>();
-	ArrayList<Seminar> seminars = new ArrayList<Seminar>();
-	private HtmlPage htmlPage = null;
+	private ArrayList<Seminar> seminars = new ArrayList<Seminar>();
 
 	@Override
-	public void init() throws ServletException {
-		super.init();
+	public void init() {
 		initialize();
 	}
 
@@ -39,31 +39,48 @@ public class Servlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-		String requestedUrl = addresses.get(req.getRequestURI()) == null ? "<h1>Page not found</h1>" : addresses.get(req.getRequestURI());
+		String requestedUrl = addresses.get(normalizeUrl(req.getRequestURI())) == null ? "<h1>Page not found</h1>" : addresses.get(normalizeUrl(req.getRequestURI()));
 		resp.getWriter().write(requestedUrl);
 
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		
+		createSeminar(req);
+		resp.getWriter().write(addresses.get(req.getRequestURI()));
+	}
 
+	private String normalizeUrl(String path) {
+		if(path.charAt(path.length()-1) == File.separatorChar){
+			path = path.substring(0, path.length() - 1);
+			System.out.println("PATH ----> " + path);
+		}
+		return path;
+	}
+
+
+	private void createSeminar(HttpServletRequest req) {
 		Date startDate = null;
 		String name = req.getParameter("name");
 		Integer number = Integer.valueOf(req.getParameter("number"));
 		String description = req.getParameter("description");
 		String location = req.getParameter("location");
-//		try {
-//			startDate = new SimpleDateFormat("dd/MM/yyyy").parse(req.getParameter("startdate"));
-//		} catch (ParseException e) {
-//			e.printStackTrace();
-//		}
+		try {
+			startDate = new SimpleDateFormat("yyyy-MM-dd").parse(req.getParameter("startdate"));
+		} catch (ParseException e) {
+			throw new RuntimeException(e);
+		}
 		
-		Seminar seminar = new Seminar(location, new Course(name, 1, description, startDate));
-		seminars.add(seminar);
-		htmlPage = new HtmlPage(seminars);
-		addresses.put("/course", htmlPage.header()+htmlPage.renderBody());
-
-		resp.getWriter().write(addresses.get(req.getRequestURI()));
+		seminars.add(new Seminar(location, new Course(name, number, description, startDate)));
+		HtmlPage htmlPage = new HtmlPage();
+		String body = "";
+		
+		for(Seminar seminarToRender : seminars) {
+			body += htmlPage.renderBody(seminarToRender);
+		}
+		
+		addresses.put("/course", htmlPage.header() + body);
 	}
 
 }
