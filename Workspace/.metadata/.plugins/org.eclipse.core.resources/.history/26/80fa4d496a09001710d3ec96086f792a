@@ -1,0 +1,10 @@
+package com;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class Checker {
+
+	public Checker(HttpServletRequest request) {
+		_request = request;
+	}
+}

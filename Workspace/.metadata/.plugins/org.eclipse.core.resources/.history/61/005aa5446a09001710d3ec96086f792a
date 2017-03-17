@@ -1,0 +1,14 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+import ch.gmtech.ste.learning.html.HtmlPage;
+import ch.gmtech.ste.learning.seminar.Seminar;
+
+public class Checker {
+
+	public Checker(HttpServletRequest request) {
+		_request = request;
+	}
+}
