@@ -1,27 +1,29 @@
 package com;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Checker {
 
 	private String _courseName;
-	private Date _startDate = null;
+	private String _startDate = null;
 	private Integer _number;
 	private String _description;
 	private String _location;
 	private Integer _seats;
 
-	public Checker(String name, Integer number, Integer seats, String location, String description, Date startDate)  {
+	public Checker(String name, int courseNumber, int courseTotalSeats, String location, String description, String startDate)  {
 		_courseName = name;
-		_number = number;
-		_seats = seats;
+		_number = courseNumber;
+		_seats = courseTotalSeats;
 		_location = location;
 		_description = description;
+		_startDate = startDate;
 	}
 	
 	public boolean check() {
-		boolean esito = checkCourseName() && checkStartDate() && checkLocation() && checkTotalSeats() && checkNumber() && checkDescription();
-		return checkCourseName() && checkStartDate() && checkLocation() && checkTotalSeats() && checkNumber() && checkDescription();
+		return checkCourseName() && checkStartDate() && checkLocation() && checkTotalSeats() && checkCourseId() && checkDescription();
 	}
 	
 	public String getCourseName() {
@@ -33,24 +35,24 @@ public class Checker {
 	}
 	
 
-	public Date getStartDate() {
+	public String getStartDate() {
 		return _startDate;
 	}
 	
 	public boolean checkStartDate() {
 		
-//		if(_startDate.toString().isEmpty()) return false;
+		if(_startDate.toString().isEmpty()) return false;
 		
-//		SimpleDateFormat sdf = new SimpleDateFormat("dd.mm.yyyy");
-//	    Date date = new Date();
-//		try {
-//			date = sdf.parse(_startDate.toString());
-//		} catch (ParseException e) {
-//			e.printStackTrace();
-//		}
-//	    if (!_startDate.equals(sdf.format(date))) {
-//	        return false;
-//	    }
+		SimpleDateFormat sdf = new SimpleDateFormat("dd.mm.yyyy");
+	    Date date = new Date();
+		try {
+			date = sdf.parse(_startDate.toString());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+	    if (!_startDate.equals(sdf.format(date))) {
+	        return false;
+	    }
 		
 		return true;
 	}
@@ -67,16 +69,16 @@ public class Checker {
 		return _location;
 	}
 
-	public int getTotalSeats() {
+	public Integer getTotalSeats() {
 		return _seats;
 	}
 
-	public int getNumber() {
+	public Integer getCourseId() {
 		return _number;
 	}
 	
-	public boolean checkNumber() {
-		return _number >= 0 && _number < _seats;
+	public boolean checkCourseId() {
+		return _number > 0 ;
 	}
 
 	public String getDescritpion() {

@@ -49,4 +49,7 @@
 <fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
 <fullyQualifiedTypeName name="j2html.TagCreator"/>
 <fullyQualifiedTypeName name="ch.gmtech.ste.learning.seminar.Seminar"/>
+<fullyQualifiedTypeName name="ch.gmtech.ste.learning.html.HtmlPage"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.Checker"/>
 </qualifiedTypeNameHistroy>

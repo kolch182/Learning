@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,15 +17,8 @@ import ch.gmtech.ste.learning.seminar.Seminar;
 @SuppressWarnings("serial")
 public class Servlet extends HttpServlet {
 
-//	private Map<String,String> addresses = new HashMap<String,String>();
 	private ArrayList<Seminar> seminars = new ArrayList<Seminar>();
 	HtmlPage htmlPage = new HtmlPage();
-
-//	@Override
-//	public void init() {
-//		addresses.put("/course/create", htmlPage.header() + htmlPage.renderFormBody());
-//		addresses.put("/try/me", "<h1>you did it!</h1>");
-//	}
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -42,25 +34,21 @@ public class Servlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		
-		Date startDate = null;
-		String name = req.getParameter("name");
-		Integer number = Integer.valueOf(req.getParameter("number"));
-		Integer seats = Integer.valueOf(req.getParameter("seats"));
-		String location = req.getParameter("location");
-		String description = req.getParameter("description");
-		try {
-			startDate = new SimpleDateFormat("yyyy-MM-dd").parse(req.getParameter("startdate"));
-		} catch (ParseException e) {
-			throw new RuntimeException(e);
-		}
+		String courseName = req.getParameter("name");
+		String courseStartDate = req.getParameter("startdate");
+		String courseLocation = req.getParameter("location");
+		int courseTotalSeats = Integer.valueOf((req.getParameter("seats").isEmpty() ? "0" : req.getParameter("seats")));
+		int courseNumber = Integer.valueOf((req.getParameter("courseid").isEmpty() ? "0" : req.getParameter("courseid")));
+		String courseDescription = req.getParameter("description");
 		
-		if(new Checker(name, number, seats, location, description, startDate).check()){
-			resp.getWriter().write(createSeminar(name, number, seats, location, description, startDate));
+		Checker checker = new Checker(courseName, courseNumber, courseTotalSeats, courseLocation, courseDescription, courseStartDate);
+		
+		if(checker.check()){
+			resp.getWriter().write(createSeminar(courseName, courseNumber, courseTotalSeats, courseLocation, courseDescription, courseStartDate));
 		}else{
-			resp.getWriter().write(htmlPage.header() + htmlPage.renderValidatedFormBody(name, number, seats, location, description, startDate));
+			resp.getWriter().write(htmlPage.header() + htmlPage.renderValidatedFormBody(checker));
 		}
 			
-
 	}
 
 	private String normalizeUrl(String path) {
@@ -71,11 +59,16 @@ public class Servlet extends HttpServlet {
 	}
 
 
-	private String createSeminar(String name, Integer number, Integer seats, String location, String description, Date startDate) {
+	private String createSeminar(String name, Integer number, Integer seats, String location, String description, String startDate) {
 		
-		seminars.add(new Seminar(location, new Course(name, number, description, startDate)));
 		HtmlPage htmlPage = new HtmlPage();
 		String body = "";
+
+		try {
+			seminars.add(new Seminar(location, new Course(name, number, description, new SimpleDateFormat("dd.mm.yyyy").parse(startDate))));
+		} catch (ParseException e) {
+			throw new RuntimeException(e);
+		}
 		
 		for(Seminar seminarToRender : seminars) {
 			body += htmlPage.renderBody(seminarToRender);

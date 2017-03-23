@@ -1,0 +1,7 @@
+1490185538313	Rename local variable 'esito'
+1490190682489	Rename local variable 'courseNumber'
+1490190907912	Extract local variable 'checker'
+1490191041389	Rename method 'getNumber'
+1490191113752	Rename method 'createInput'
+1490191120826	Rename method 'createValidationInput'
+1490191269273	Rename method 'checkNumber'
