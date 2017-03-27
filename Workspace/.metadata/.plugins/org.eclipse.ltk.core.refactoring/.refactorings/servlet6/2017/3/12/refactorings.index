@@ -5,3 +5,14 @@
 1490191113752	Rename method 'createInput'
 1490191120826	Rename method 'createValidationInput'
 1490191269273	Rename method 'checkNumber'
+1490281461119	Rename method 'renderValidatedFormBody'
+1490358715380	Delete element
+1490360234622	Rename field '_number'
+1490360390606	Rename local variable 'seminarToRender'
+1490360403358	Rename local variable 'seminar'
+1490360486469	Delete element
+1490361410161	Rename method 'createSeminar'
+1490363532784	Rename local variable 'courseNumber'
+1490365645529	Rename local variable 'courseNumber'
+1490365665910	Rename field '_number'
+1490365789478	Rename local variable 'number'

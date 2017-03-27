@@ -39,7 +39,6 @@
 <fullyQualifiedTypeName name="org.springframework.util.Assert"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="ch.gmtech.ste.removesettingmethod.Account"/>
 <fullyQualifiedTypeName name="ch.gmtech.ste.removesettingmethod.AccountVariation"/>
 <fullyQualifiedTypeName name="ch.gmtech.ste.learning.seminar.next.print.Plain"/>
@@ -49,7 +48,15 @@
 <fullyQualifiedTypeName name="org.omg.PortableServer.ID_ASSIGNMENT_POLICY_ID"/>
 <fullyQualifiedTypeName name="j2html.TagCreator"/>
 <fullyQualifiedTypeName name="ch.gmtech.ste.learning.seminar.Seminar"/>
-<fullyQualifiedTypeName name="ch.gmtech.ste.learning.html.HtmlPage"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="com.Checker"/>
+<fullyQualifiedTypeName name="j2html.tags.ContainerTag"/>
+<fullyQualifiedTypeName name="com.ServletController"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="ch.gmtech.ste.learning.seminar.Course"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="ch.gmtech.ste.learning.html.HtmlPage"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
 </qualifiedTypeNameHistroy>

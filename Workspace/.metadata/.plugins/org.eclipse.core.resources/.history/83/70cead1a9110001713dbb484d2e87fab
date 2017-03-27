@@ -1,0 +1,42 @@
+package ch.gmtech.ste.learning.seminar;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Course {
+	
+	private final String _name;
+	private final Integer _number;
+	private final String _description;
+	private final Date _startDate;
+	private final String _location;
+	private final List<Student> _students = new ArrayList<Student>();
+
+	public Course(String courseName, Integer courseId, String description, Date startDate, String location, Course course) {
+		_name = courseName;
+		_number = courseId;
+		_description = description;
+		_startDate = startDate;
+		_course = course;
+		_location = location;
+	}
+
+	public String description(){
+		return _description;
+	}
+
+	public String name() {
+		return _name;
+	}
+
+	public Integer number() {
+		return _number;
+	}
+	
+	public String getStartDate() {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+		return sdf.format(_startDate); 
+	}
+}
