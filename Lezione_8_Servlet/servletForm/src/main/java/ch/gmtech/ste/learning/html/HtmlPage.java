@@ -1,10 +1,13 @@
 package ch.gmtech.ste.learning.html;
 import static j2html.TagCreator.*;
 
+import java.util.ArrayList;
+
 import com.Checker;
 
 import ch.gmtech.ste.learning.seminar.Course;
 import j2html.tags.ContainerTag;
+import j2html.tags.DomContent;
 
 public class HtmlPage{
 	
@@ -21,15 +24,28 @@ public class HtmlPage{
 				).render();
 	}
 
-	public String renderBody(Course course){
+	public String renderBody(ArrayList<Course> courses){
 		
-		return body().with(
-				div().withId("Seminars").with(
-						ul().with(li(course.name()))
+		ArrayList<DomContent> children = new ArrayList<DomContent>();
+		
+		for(Course course : courses) {
+			children.
+				add(li(
+					course.name() + " - " + course.location() + " - " + course.id() + " - seats left: " + course.seatsLeft()
+					).withClass("list-group-item")
+				);
+		}
+
+		
+		return h2("Courses List").with(
+				body().withClass("container").with(
+					ul().withClass("list-group").with(
+						children
 					)
-				)
+				))
 				.render();
 	}
+	
 	
 	public String renderFormBody(){
 

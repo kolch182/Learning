@@ -68,10 +68,10 @@ public class ServletController {
 			throw new RuntimeException(e);
 		}
 		
-		for(Course courseToRender : courses) {
-			body += htmlPage.renderBody(courseToRender);
-		}
+//		for(Course courseToRender : courses) {
+//			body += htmlPage.renderBody(courseToRender);
+//		}
 		
-		return htmlPage.header() + body;
+		return htmlPage.header() + htmlPage.renderBody(courses);
 	}
 }

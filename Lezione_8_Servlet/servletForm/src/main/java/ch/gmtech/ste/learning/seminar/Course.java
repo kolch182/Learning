@@ -32,7 +32,7 @@ public class Course {
 		return _name;
 	}
 
-	public Integer number() {
+	public Integer id() {
 		return _id;
 	}
 	
