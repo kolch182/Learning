@@ -53,24 +53,33 @@ public class Checker {
 	}
 	
 	public String checkCourseName() {
-		_message = !_courseName.isEmpty() == true ? "" : "Can't be empty! ";
+		verifyEmptyAndWarning(_courseName);
+		System.out.println("COURSE " + _courseName.length());
+		_message += _courseName.length() > 15 ? "The maximum lenght for the course name is 15! " : "";
 		return _message;
 	}
 	
 	public String checkLocation() {
-		_message = !_location.isEmpty() == true ? "" : "Can't be empty! ";
+		verifyEmptyAndWarning(_location);
+		_message += _location.length() > 20 ? "The maximum lenght for the course name is 20! " : "";
 		return _message;
 	}
 	
 	public String checkTotalSeats() {
-		_message = _seats.matches("^\\d{1,3}$") == true ? "" : "The number must have no more than 3 digits! ";
+		verifyEmptyAndWarning(_seats);
+		_message += _seats.matches("^\\d{1,3}$") == true ? "" : "The number must have no more than 3 digits! ";
 		_message += (_seats.matches("[1-9][0-9]*") == true && Integer.valueOf(_seats) < 100) ? "" : "Insert a valid number lower than 100! ";
 		return _message;
 	}
 
 	public String checkCourseId() {
-		_message = _id.matches("[1-9][0-9]*") == true ? "" : "Insert a number value! ";
+		_message = _seats.isEmpty() == true ? "" : "Can't be empty! ";
+		_message += _id.matches("[1-9][0-9]*") == true ? "" : "Insert a number value! ";
 		return _message ;
+	}
+
+	private void verifyEmptyAndWarning(String input) {
+		_message = !input.isEmpty() == true ? "" : "Can't be empty! ";
 	}
 
 	public String getLocation() {
