@@ -8947,3 +8947,15 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-29 17:38:59.407
 !MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-29 17:40:48.263
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-29 17:40:48.264
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-29 17:40:53.885
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2017-03-29 17:40:53.887
+!MESSAGE Using platform encoding (ISO-8859-1 actually) to copy filtered resources, i.e. build is platform dependent!

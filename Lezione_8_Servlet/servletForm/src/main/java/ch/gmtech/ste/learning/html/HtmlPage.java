@@ -29,11 +29,7 @@ public class HtmlPage{
 		ArrayList<DomContent> children = new ArrayList<DomContent>();
 		
 		for(Course course : courses) {
-			children.
-				add(li(
-					course.name() + " - " + course.location() + " - " + course.id() + " - seats left: " + course.seatsLeft()
-					).withClass("list-group-item")
-				);
+			children.add(li(course.name() + " - " + course.location() + " - " + course.id() + " - seats left: " + course.seatsLeft()).withClass("list-group-item"));
 		}
 
 		
