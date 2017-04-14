@@ -67,13 +67,13 @@ public class Checker {
 	
 	public String checkTotalSeats() {
 		verifyEmptyAndWarning(_seats);
-		_message += _seats.matches("^\\d{1,3}$") == true ? "" : "The number must have no more than 3 digits! ";
+		_message = _seats.matches("^\\d{1,3}$") == true ? "" : "The number must have no more than 3 digits! ";
 		_message += (_seats.matches("[1-9][0-9]*") == true && Integer.valueOf(_seats) < 100) ? "" : "Insert a valid number lower than 100! ";
 		return _message;
 	}
 
 	public String checkCourseId() {
-		_message = _seats.isEmpty() == true ? "" : "Can't be empty! ";
+		_message = !_id.isEmpty() == true ? "" : "Can't be empty! ";
 		_message += _id.matches("[1-9][0-9]*") == true ? "" : "Insert a number value! ";
 		return _message ;
 	}

@@ -1,4 +1,4 @@
-package ch.gmtech.ste.learning.html;
+package ch.gmtech.ste.learning.view;
 import static j2html.TagCreator.*;
 
 import java.util.ArrayList;
@@ -25,19 +25,18 @@ public class HtmlPage{
 				).render();
 	}
 
-	public String renderBody(List<Course> courses){
+	public String showCourses(List<Course> courses){
 		
-		ArrayList<DomContent> children = new ArrayList<DomContent>();
+		ArrayList<DomContent> courseElement = new ArrayList<DomContent>();
 		
 		for(Course course : courses) {
-			children.add(li(course.name() + " - " + course.location() + " - " + course.id() + " - seats left: " + course.seatsLeft()).withClass("list-group-item"));
+			courseElement.add(li(course.name() + " - " + course.location() + " - " + course.id() + " - seats left: " + course.seatsLeft()).withClass("list-group-item"));
 		}
 
-		
 		return h2("Courses List").with(
 				body().withClass("container").with(
 					ul().withClass("list-group").with(
-						children
+						courseElement
 					)
 				))
 				.render();
