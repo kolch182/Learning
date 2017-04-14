@@ -1,4 +1,0 @@
-//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.jdt.junit.launchconfig=org.eclipse.jdt.junit.launchconfig,debug,;
-eclipse.preferences.version=1
-org.eclipse.debug.core.USE_STEP_FILTERS=false
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="cardData.accountId.getInteger().equals(account.id.getInteger())&\#10;&\#9;&\#9;&\#9;&\#9;&amp;&amp; cardData.customerId.getInteger().equals(account.customerId.getInteger())"/>\n</watchExpressions>\n

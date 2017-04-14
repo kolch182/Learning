@@ -2,6 +2,7 @@ package ch.gmtech.ste.learning.html;
 import static j2html.TagCreator.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.Checker;
 
@@ -24,7 +25,7 @@ public class HtmlPage{
 				).render();
 	}
 
-	public String renderBody(ArrayList<Course> courses){
+	public String renderBody(List<Course> courses){
 		
 		ArrayList<DomContent> children = new ArrayList<DomContent>();
 		

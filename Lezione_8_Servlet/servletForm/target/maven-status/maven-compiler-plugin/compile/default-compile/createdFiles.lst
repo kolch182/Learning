@@ -1,6 +1,5 @@
-ch/gmtech/ste/learning/html/HtmlPage.class
 ch/gmtech/ste/learning/seminar/Course.class
-com/ServletController.class
-ch/gmtech/ste/learning/seminar/Student.class
 com/Servlet.class
+ch/gmtech/ste/learning/seminar/Student.class
 com/Checker.class
+ch/gmtech/ste/learning/html/HtmlPage.class
