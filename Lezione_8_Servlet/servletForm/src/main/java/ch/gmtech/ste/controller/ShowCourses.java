@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletResponse;
 
-import ch.gmtech.ste.learning.seminar.Course;
-import ch.gmtech.ste.learning.view.HtmlPage;
+import ch.gmtech.ste.seminar.Course;
+import ch.gmtech.ste.view.HtmlPage;
 
 public class ShowCourses implements Controller{
 	

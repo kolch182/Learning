@@ -15,8 +15,8 @@ import org.apache.commons.lang3.StringUtils;
 import ch.gmtech.ste.controller.Controller;
 import ch.gmtech.ste.controller.CreateCourse;
 import ch.gmtech.ste.controller.ShowCourses;
-import ch.gmtech.ste.learning.seminar.Course;
-import ch.gmtech.ste.learning.view.HtmlPage;
+import ch.gmtech.ste.seminar.Course;
+import ch.gmtech.ste.view.HtmlPage;
 
 @SuppressWarnings("serial")
 public class Servlet extends HttpServlet {

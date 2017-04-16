@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.Checker;
 
-import ch.gmtech.ste.learning.seminar.Course;
-import ch.gmtech.ste.learning.view.HtmlPage;
+import ch.gmtech.ste.seminar.Course;
+import ch.gmtech.ste.view.HtmlPage;
 
 public class CreateCourse implements Controller{
 
@@ -33,7 +33,7 @@ public class CreateCourse implements Controller{
 		}
 		if ("GET".equals(_request.getMethod())) {
 			_response.setStatus(HttpServletResponse.SC_OK);
-			_response.getWriter().write(_view.renderFormBody());
+			_response.getWriter().write(_view.showForm(null));
 		}
 
 	}
@@ -52,7 +52,7 @@ public class CreateCourse implements Controller{
 		if(checker.check()){
 			_response.getWriter().write(createCourse(courseName, courseId, courseTotalSeats, courseLocation, courseDescription, courseStartDate));
 		}else{
-			_response.getWriter().write(_view.renderFormBody(checker));
+			_response.getWriter().write(_view.showForm(checker));
 		}
 
 

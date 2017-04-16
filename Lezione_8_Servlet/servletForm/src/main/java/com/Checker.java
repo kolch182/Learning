@@ -54,7 +54,6 @@ public class Checker {
 	
 	public String checkCourseName() {
 		verifyEmptyAndWarning(_courseName);
-		System.out.println("COURSE " + _courseName.length());
 		_message += _courseName.length() > 15 ? "The maximum lenght for the course name is 15! " : "";
 		return _message;
 	}
