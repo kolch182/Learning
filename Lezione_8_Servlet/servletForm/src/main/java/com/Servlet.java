@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,12 +15,10 @@ import ch.gmtech.ste.controller.Controller;
 import ch.gmtech.ste.controller.CreateCourse;
 import ch.gmtech.ste.controller.ShowCourses;
 import ch.gmtech.ste.seminar.Course;
-import ch.gmtech.ste.view.HtmlPage;
 
 @SuppressWarnings("serial")
 public class Servlet extends HttpServlet {
 	
-	private final HtmlPage _view = new HtmlPage();
 	private ArrayList<Course> _courses;
 	
 	public static final String SHOW_COURSES = "/course";
@@ -34,7 +31,7 @@ public class Servlet extends HttpServlet {
 	}
 	
 	@Override
-	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		Map<String,Controller> routes = new HashMap<String, Controller>();
 		routes.put(CREATE_COURSE, new CreateCourse(req, resp, _courses));
 		routes.put(SHOW_COURSES, new ShowCourses(_courses, resp));

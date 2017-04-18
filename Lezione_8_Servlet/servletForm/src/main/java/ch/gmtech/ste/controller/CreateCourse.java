@@ -8,8 +8,7 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.Checker;
-
+import ch.gmtech.ste.checker.Checker;
 import ch.gmtech.ste.seminar.Course;
 import ch.gmtech.ste.view.HtmlPage;
 
@@ -40,16 +39,17 @@ public class CreateCourse implements Controller{
 
 	private void action() throws IOException {
 
-		String courseName = _request.getParameter("name");
-		String courseStartDate = _request.getParameter("startdate");
-		String courseLocation = _request.getParameter("location");
-		String courseTotalSeats = _request.getParameter("seats").isEmpty() ? "0" : _request.getParameter("seats");
-		String courseId = _request.getParameter("courseid");
-		String courseDescription = _request.getParameter("description");
 
-		Checker checker = new Checker(courseName, courseId, courseTotalSeats, courseLocation, courseDescription, courseStartDate);
+		Checker checker = new Checker(Course.rules(), _request);
+		
+		if(checker.isValid()){
+			String courseName = _request.getParameter(Course.NAME);
+			String courseStartDate = _request.getParameter(Course.START);
+			String courseLocation = _request.getParameter(Course.LOCATION);
+			String courseTotalSeats = _request.getParameter(Course.TOTAL_SEATS).isEmpty() ? "0" : _request.getParameter(Course.TOTAL_SEATS);
+			String courseId = _request.getParameter(Course.ID);
+			String courseDescription = _request.getParameter(Course.DESCRIPTION);
 
-		if(checker.check()){
 			_response.getWriter().write(createCourse(courseName, courseId, courseTotalSeats, courseLocation, courseDescription, courseStartDate));
 		}else{
 			_response.getWriter().write(_view.showForm(checker));

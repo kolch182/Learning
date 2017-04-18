@@ -2,10 +2,10 @@ package ch.gmtech.ste.view;
 import static j2html.TagCreator.*;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-import com.Checker;
-
+import ch.gmtech.ste.checker.Checker;
 import ch.gmtech.ste.seminar.Course;
 import j2html.tags.ContainerTag;
 import j2html.tags.DomContent;
@@ -142,12 +142,12 @@ public class HtmlPage{
 		ArrayList<DomContent> input = new ArrayList<DomContent>();
 
 		if(checker != null){
-			input.add(createValidatedInput("Name",checker.getCourseName(),"courseName","name","Course Name", checker.checkCourseName()));
-			input.add(createValidatedInput("CourseId",checker.getCourseId(),"courseid","courseid","CourseId", checker.checkCourseId()));
-			input.add(createValidatedInput("TotalSeats",checker.getTotalSeats(),"seats","seats","TotalSeats", checker.checkTotalSeats()));
-			input.add(createValidatedInput("Location",checker.getLocation(),"location","location","Location",checker.checkLocation()));
-			input.add(createValidatedInput("Description",checker.getDescritpion(),"description","description","Description", checker.checkDescription()));
-			input.add(createValidatedInput("StartDate",checker.getStartDate(),"startdate","startdate","StartDate", checker.checkStartDate()));
+			input.add(createValidatedInput("Name",checker.getCourseName(),"courseName","name","Course Name", checker.validate().get(Course.NAME)));
+			input.add(createValidatedInput("CourseId",checker.getCourseId(),"courseid","courseid","CourseId", checker.validate().get(Course.ID)));
+			input.add(createValidatedInput("TotalSeats",checker.getTotalSeats(),"seats","seats","TotalSeats", checker.validate().get(Course.TOTAL_SEATS)));
+			input.add(createValidatedInput("Location",checker.getLocation(),"location","location","Location",checker.validate().get(Course.LOCATION)));
+			input.add(createValidatedInput("Description",checker.getDescritpion(),"description","description","Description", checker.validate().get(Course.DESCRIPTION)));
+			input.add(createValidatedInput("StartDate",checker.getStartDate(),"startdate","startdate","StartDate", checker.validate().get(Course.START)));
 		}else{
 			input.add(createEmptyInput("Name","courseName","name","Course Name"));
 			input.add(createEmptyInput("CourseId","courseid","courseid","CourseId"));
@@ -188,21 +188,27 @@ public class HtmlPage{
 				);
 	}
 
-	private ContainerTag createValidatedInput(String label, String value, String id, String name, String placeHolder, String message ) {
-		return div().withClass(message.isEmpty() ? "form-group has-success has-feedback" : "form-group has-error has-feedback").with( 
+	private ContainerTag createValidatedInput(String label, String value, String id, String name, String placeHolder, Collection<String> messages ) {
+		
+		ContainerTag input = div().withClass("col-sm-10").with(
+			input()
+			.withType("text")
+			.withClass("form-control")
+			.withId(id)
+			.withName(name)
+			.withPlaceholder(placeHolder)
+			.withValue(value),
+			span().withClass(messages.isEmpty() ? "glyphicon form-control-feedback glyphicon-ok" : "glyphicon form-control-feedback glyphicon-remove"),
+			span(messages.isEmpty() ? "(success)"  : "(error)").withClass("sr-only")
+			);
+		
+		for(String message : messages) {
+			input.with(span(message.isEmpty() ? label + " is valid" : message).withClass("help-block").withId(id));
+		}
+		
+		return div().withClass(messages.isEmpty() ? "form-group has-success has-feedback" : "form-group has-error has-feedback").with( 
 				label(label).withClass("col-sm-2 control-label"),
-				div().withClass("col-sm-10").with(
-					input()
-					.withType("text")
-					.withClass("form-control")
-					.withId(id)
-					.withName(name)
-					.withPlaceholder(placeHolder)
-					.withValue(value),
-					span().withClass(message.isEmpty() ? "glyphicon form-control-feedback glyphicon-ok" : "glyphicon form-control-feedback glyphicon-remove"),
-					span(message.isEmpty() ? label + " is valid" : message).withClass("help-block").withId("dacambiare"),
-					span(message.isEmpty() ? "(success)"  : "(error)").withClass("sr-only")
-					)
+				input
 				);
 	}
 

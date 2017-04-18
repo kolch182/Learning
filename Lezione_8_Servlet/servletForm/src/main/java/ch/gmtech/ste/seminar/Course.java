@@ -1,11 +1,33 @@
 package ch.gmtech.ste.seminar;
 
+import static java.util.Arrays.asList;
+
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.commons.collections4.MultiValuedMap;
+import org.apache.commons.collections4.multimap.ArrayListValuedHashMap;
+
+import ch.gmtech.ste.checker.MaxLength;
+import ch.gmtech.ste.checker.NotEmpty;
+import ch.gmtech.ste.checker.Rule;
+import ch.gmtech.ste.checker.TimeFormat;
+import ch.gmtech.ste.checker.Number;
+
+import static ch.gmtech.ste.checker.Number.OPERATOR.GREATER_THAN;
+import static ch.gmtech.ste.checker.Number.OPERATOR.LESS_THAN;
+
 public class Course {
+	
+	public static final String ID = "courseid";
+	public static final String NAME = "name";
+	public static final String DESCRIPTION = "description";
+	public static final String LOCATION = "location";
+	public static final String TOTAL_SEATS = "seats";
+	public static final String START = "startdate";
 	
 	private final String _name;
 	private final Integer _id;
@@ -22,6 +44,16 @@ public class Course {
 		_startDate = startDate;
 		_location = location;
 		_seats = seats;
+	}
+	
+	public static MultiValuedMap<String, Rule> rules(){
+		 return new ArrayListValuedHashMap<String, Rule>(){{
+			put(ID,         new NotEmpty());
+			putAll(NAME, 			  asList(new NotEmpty(), new MaxLength(15)));
+			putAll(LOCATION, 	  asList(new NotEmpty(), new MaxLength(20)));
+			putAll(TOTAL_SEATS, asList(new Number(GREATER_THAN, 0), new Number(LESS_THAN, 100), new MaxLength(3)));
+			put(START, 				  new TimeFormat("dd.MM.yyyy"));
+		}};
 	}
 
 	public String description(){
