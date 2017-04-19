@@ -32,7 +32,7 @@ public class CreateCourse implements Controller{
 		}
 		if ("GET".equals(_request.getMethod())) {
 			_response.setStatus(HttpServletResponse.SC_OK);
-			_response.getWriter().write(_view.showForm(null));
+			_response.getWriter().write(_view.showForm());
 		}
 
 	}

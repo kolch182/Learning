@@ -1,5 +1,29 @@
 package ch.gmtech.ste.view;
-import static j2html.TagCreator.*;
+import static j2html.TagCreator.a;
+import static j2html.TagCreator.body;
+import static j2html.TagCreator.button;
+import static j2html.TagCreator.div;
+import static j2html.TagCreator.footer;
+import static j2html.TagCreator.form;
+import static j2html.TagCreator.h1;
+import static j2html.TagCreator.head;
+import static j2html.TagCreator.html;
+import static j2html.TagCreator.input;
+import static j2html.TagCreator.label;
+import static j2html.TagCreator.li;
+import static j2html.TagCreator.link;
+import static j2html.TagCreator.meta;
+import static j2html.TagCreator.p;
+import static j2html.TagCreator.script;
+import static j2html.TagCreator.span;
+import static j2html.TagCreator.table;
+import static j2html.TagCreator.tbody;
+import static j2html.TagCreator.td;
+import static j2html.TagCreator.th;
+import static j2html.TagCreator.thead;
+import static j2html.TagCreator.title;
+import static j2html.TagCreator.tr;
+import static j2html.TagCreator.ul;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -92,10 +116,39 @@ public class HtmlPage{
 		
 		DomContent formElement = 
 				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
-					form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
-						createInputFields(checker)
-					)
-				)
+						form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
+								createValidatedInput("Name",checker.getCourseName(),"courseName","name","Course Name", checker.validate().get(Course.NAME)),
+								createValidatedInput("CourseId",checker.getCourseId(),"courseid","courseid","CourseId", checker.validate().get(Course.ID)),
+								createValidatedInput("TotalSeats",checker.getTotalSeats(),"seats","seats","TotalSeats", checker.validate().get(Course.TOTAL_SEATS)),
+								createValidatedInput("Location",checker.getLocation(),"location","location","Location",checker.validate().get(Course.LOCATION)),
+								createValidatedInput("Description",checker.getDescritpion(),"description","description","Description", checker.validate().get(Course.DESCRIPTION)),
+								createValidatedInput("StartDate",checker.getStartDate(),"startdate","startdate","StartDate", checker.validate().get(Course.START)),
+								createSubmit(),
+								script().withSrc("/js/jquery.min.js"),
+								script().withSrc("/js/bootstrap.min.js")
+								)
+						)
+				;
+		
+		return showView(formElement);
+	}
+
+	public String showForm(){
+		
+		DomContent formElement = 
+				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
+						form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
+								createEmptyInput("Name","courseName","name","Course Name"),
+								createEmptyInput("CourseId","courseid","courseid","CourseId"),
+								createEmptyInput("TotalSeats","seats","seats","TotalSeats"),
+								createEmptyInput("Location","location","location","Location"),
+								createEmptyInput("Description","description","description","Description"),
+								createEmptyInput("StartDate","startdate","startdate","StartDate"),
+								createSubmit(),
+								script().withSrc("/js/jquery.min.js"),
+								script().withSrc("/js/bootstrap.min.js")
+								)
+						)
 				;
 		
 		return showView(formElement);
@@ -137,31 +190,6 @@ public class HtmlPage{
 		return showView(courseElement);
 	}
 	
-	
-	private ArrayList<DomContent> createInputFields(Checker checker) {
-		ArrayList<DomContent> input = new ArrayList<DomContent>();
-
-		if(checker != null){
-			input.add(createValidatedInput("Name",checker.getCourseName(),"courseName","name","Course Name", checker.validate().get(Course.NAME)));
-			input.add(createValidatedInput("CourseId",checker.getCourseId(),"courseid","courseid","CourseId", checker.validate().get(Course.ID)));
-			input.add(createValidatedInput("TotalSeats",checker.getTotalSeats(),"seats","seats","TotalSeats", checker.validate().get(Course.TOTAL_SEATS)));
-			input.add(createValidatedInput("Location",checker.getLocation(),"location","location","Location",checker.validate().get(Course.LOCATION)));
-			input.add(createValidatedInput("Description",checker.getDescritpion(),"description","description","Description", checker.validate().get(Course.DESCRIPTION)));
-			input.add(createValidatedInput("StartDate",checker.getStartDate(),"startdate","startdate","StartDate", checker.validate().get(Course.START)));
-		}else{
-			input.add(createEmptyInput("Name","courseName","name","Course Name"));
-			input.add(createEmptyInput("CourseId","courseid","courseid","CourseId"));
-			input.add(createEmptyInput("TotalSeats","seats","seats","TotalSeats"));
-			input.add(createEmptyInput("Location","location","location","Location"));
-			input.add(createEmptyInput("Description","description","description","Description"));
-			input.add(createEmptyInput("StartDate","startdate","startdate","StartDate"));
-		}
-		input.add(createSubmit());
-		input.add(script().withSrc("/js/jquery.min.js"));
-		input.add(script().withSrc("/js/bootstrap.min.js"));
-		return input;
-	}
-
 	private ContainerTag createSubmit() {
 		return div().withClass("form-group").with( 
 				div().withClass("col-sm-10 col-sm-offset-2").with(
