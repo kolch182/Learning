@@ -2,7 +2,7 @@ package ch.gmtech.ste.checker;
 
 import org.apache.commons.lang3.StringUtils;
 
-public class NotEmpty implements Rule {
+public class NotEmptyRule implements Rule {
 
 	@Override
 	public boolean applyOn(String what) {

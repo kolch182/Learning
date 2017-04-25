@@ -2,7 +2,7 @@ package ch.gmtech.ste.checker;
 
 import org.apache.commons.lang3.math.NumberUtils;
 
-public class Number implements Rule {
+public class NumberRule implements Rule {
 
 	private final Integer _b;
 	private final OPERATOR _op;
@@ -10,7 +10,7 @@ public class Number implements Rule {
 	private String _message;
 	public enum OPERATOR {LESS_THAN, GREATER_THAN, GREATER_EQUAL, LESS_EQUAL}
 	
-	public Number(OPERATOR op,  Integer b) {
+	public NumberRule(OPERATOR op,  Integer b) {
 		_op = op;
 		_b = b;
 		_message = "";

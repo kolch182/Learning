@@ -11,14 +11,14 @@ import java.util.List;
 import org.apache.commons.collections4.MultiValuedMap;
 import org.apache.commons.collections4.multimap.ArrayListValuedHashMap;
 
-import ch.gmtech.ste.checker.MaxLength;
-import ch.gmtech.ste.checker.NotEmpty;
+import ch.gmtech.ste.checker.MaxLengthRule;
+import ch.gmtech.ste.checker.NotEmptyRule;
 import ch.gmtech.ste.checker.Rule;
-import ch.gmtech.ste.checker.TimeFormat;
-import ch.gmtech.ste.checker.Number;
+import ch.gmtech.ste.checker.TimeFormatRule;
+import ch.gmtech.ste.checker.NumberRule;
 
-import static ch.gmtech.ste.checker.Number.OPERATOR.GREATER_THAN;
-import static ch.gmtech.ste.checker.Number.OPERATOR.LESS_THAN;
+import static ch.gmtech.ste.checker.NumberRule.OPERATOR.GREATER_THAN;
+import static ch.gmtech.ste.checker.NumberRule.OPERATOR.LESS_THAN;
 
 public class Course {
 	
@@ -48,11 +48,11 @@ public class Course {
 	
 	public static MultiValuedMap<String, Rule> rules(){
 		 return new ArrayListValuedHashMap<String, Rule>(){{
-			put(ID,         new NotEmpty());
-			putAll(NAME, 			  asList(new NotEmpty(), new MaxLength(15)));
-			putAll(LOCATION, 	  asList(new NotEmpty(), new MaxLength(20)));
-			putAll(TOTAL_SEATS, asList(new Number(GREATER_THAN, 0), new Number(LESS_THAN, 100), new MaxLength(3)));
-			put(START, 				  new TimeFormat("dd.MM.yyyy"));
+			put(ID,         new NotEmptyRule());
+			putAll(NAME, 			  asList(new NotEmptyRule(), new MaxLengthRule(15)));
+			putAll(LOCATION, 	  asList(new NotEmptyRule(), new MaxLengthRule(20)));
+			putAll(TOTAL_SEATS, asList(new NumberRule(GREATER_THAN, 0), new NumberRule(LESS_THAN, 100), new MaxLengthRule(3)));
+			put(START, 				  new TimeFormatRule("dd.MM.yyyy"));
 		}};
 	}
 
@@ -81,9 +81,13 @@ public class Course {
 		return _seats - _students.size();
 	}
 
-	public void enroll(Student student) {
+	public boolean enroll(Student student) {
+		boolean add = false;
+		
 		if(_students.size() < _seats)
-			_students.add(student);
+			add = _students.add(student);
+		
+		return add;
 	}
 
 	public List<Student> students() {
