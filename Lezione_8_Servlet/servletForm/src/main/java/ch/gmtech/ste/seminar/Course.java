@@ -1,8 +1,9 @@
 package ch.gmtech.ste.seminar;
 
+import static ch.gmtech.ste.checker.NumberRule.OPERATOR.GREATER_THAN;
+import static ch.gmtech.ste.checker.NumberRule.OPERATOR.LESS_THAN;
 import static java.util.Arrays.asList;
 
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -13,12 +14,9 @@ import org.apache.commons.collections4.multimap.ArrayListValuedHashMap;
 
 import ch.gmtech.ste.checker.MaxLengthRule;
 import ch.gmtech.ste.checker.NotEmptyRule;
+import ch.gmtech.ste.checker.NumberRule;
 import ch.gmtech.ste.checker.Rule;
 import ch.gmtech.ste.checker.TimeFormatRule;
-import ch.gmtech.ste.checker.NumberRule;
-
-import static ch.gmtech.ste.checker.NumberRule.OPERATOR.GREATER_THAN;
-import static ch.gmtech.ste.checker.NumberRule.OPERATOR.LESS_THAN;
 
 public class Course {
 	
@@ -30,16 +28,14 @@ public class Course {
 	public static final String START = "startdate";
 	
 	private final String _name;
-	private final Integer _id;
 	private final Integer _seats;
 	private final String _description;
 	private final Date _startDate;
 	private final String _location;
 	private final List<Student> _students = new ArrayList<Student>();
 
-	public Course(String courseName, Integer courseId, String description, Date startDate, String location, Integer seats) {
+	public Course(String courseName, String description, Date startDate, String location, Integer seats) {
 		_name = courseName;
-		_id = courseId;
 		_description = description;
 		_startDate = startDate;
 		_location = location;
@@ -64,10 +60,6 @@ public class Course {
 		return _name;
 	}
 
-	public Integer id() {
-		return _id;
-	}
-	
 	public String getStartDate() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
 		return sdf.format(_startDate); 

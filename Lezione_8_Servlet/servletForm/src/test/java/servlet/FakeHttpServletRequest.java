@@ -2,8 +2,6 @@ package servlet;
 
 
 import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.security.Principal;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -49,7 +47,7 @@ public class FakeHttpServletRequest implements HttpServletRequest{
 	}
 
 	@Override
-	public void setCharacterEncoding(String env) throws UnsupportedEncodingException {
+	public void setCharacterEncoding(String env) {
 	}
 
 	@Override
@@ -63,7 +61,7 @@ public class FakeHttpServletRequest implements HttpServletRequest{
 	}
 
 	@Override
-	public ServletInputStream getInputStream() throws IOException {
+	public ServletInputStream getInputStream() {
 		return null;
 	}
 
@@ -108,7 +106,7 @@ public class FakeHttpServletRequest implements HttpServletRequest{
 	}
 
 	@Override
-	public BufferedReader getReader() throws IOException {
+	public BufferedReader getReader() {
 		return null;
 	}
 
@@ -139,7 +137,7 @@ public class FakeHttpServletRequest implements HttpServletRequest{
 	}
 
 	@Override
-	public Enumeration getLocales() {
+	public Enumeration<String> getLocales() {
 		return null;
 	}
 
@@ -199,12 +197,12 @@ public class FakeHttpServletRequest implements HttpServletRequest{
 	}
 
 	@Override
-	public Enumeration getHeaders(String name) {
+	public Enumeration<String> getHeaders(String name) {
 		return null;
 	}
 
 	@Override
-	public Enumeration getHeaderNames() {
+	public Enumeration<String> getHeaderNames() {
 		return null;
 	}
 

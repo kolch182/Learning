@@ -1,5 +1,7 @@
 package ch.gmtech.ste.controller;
 
+import java.sql.Connection;
+
 public interface Controller {
-	void execute() throws Exception;
+	void execute(Connection connection) throws Exception;
 }

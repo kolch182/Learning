@@ -1,6 +1,9 @@
 package ch.gmtech.ste.controller;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -18,6 +21,7 @@ public class CreateCourse implements Controller{
 	private final HttpServletResponse _response;
 	private final ArrayList<Course> _courses;
 	private final HtmlPage _view = new HtmlPage();
+	private Connection _connection;
 
 	public CreateCourse(HttpServletRequest request, HttpServletResponse response, ArrayList<Course> courses) {
 		_request = request;
@@ -26,7 +30,8 @@ public class CreateCourse implements Controller{
 	}
 
 	@Override
-	public void execute() throws Exception {
+	public void execute(Connection connection) throws Exception {
+		_connection = connection;
 		if ("POST".equals(_request.getMethod())) {
 			action();
 		}
@@ -39,18 +44,16 @@ public class CreateCourse implements Controller{
 
 	private void action() throws IOException {
 
-
 		Checker checker = new Checker(Course.rules(), _request);
-		
+
 		if(checker.isValid()){
 			String courseName = _request.getParameter(Course.NAME);
 			String courseStartDate = _request.getParameter(Course.START);
 			String courseLocation = _request.getParameter(Course.LOCATION);
 			String courseTotalSeats = _request.getParameter(Course.TOTAL_SEATS).isEmpty() ? "0" : _request.getParameter(Course.TOTAL_SEATS);
-			String courseId = _request.getParameter(Course.ID);
 			String courseDescription = _request.getParameter(Course.DESCRIPTION);
 
-			_response.getWriter().write(createCourse(courseName, courseId, courseTotalSeats, courseLocation, courseDescription, courseStartDate));
+			_response.getWriter().write(createCourse(courseName, courseTotalSeats, courseLocation, courseDescription, courseStartDate));
 		}else{
 			_response.getWriter().write(_view.showForm(checker));
 		}
@@ -58,17 +61,25 @@ public class CreateCourse implements Controller{
 
 	}
 
-	private String createCourse(String name, String id, String seats, String location, String description, String startDate) {
+	private String createCourse(String name, String seats, String location, String description, String startDate) {
 
 		HtmlPage htmlPage = new HtmlPage();
 
 		try {
-			_courses.add(new Course(name, Integer.valueOf(id), description, new SimpleDateFormat("dd.mm.yyyy").parse(startDate), location, Integer.valueOf(seats)));
+			Statement statement = _connection.createStatement();
+
+			statement.executeUpdate("insert into Course values(null, '" + name + "', '" + description + "', '" + location + 
+					"', '" + Integer.valueOf(seats) + "', '" + new SimpleDateFormat("dd.mm.yyyy").parse(startDate) + "')");
+
+			_courses.add(new Course(name, description, new SimpleDateFormat("dd.mm.yyyy").parse(startDate), location, Integer.valueOf(seats)));
 		} catch (ParseException e) {
 			throw new RuntimeException(e);
 		}
+			catch (SQLException e) {
+			e.printStackTrace();
+		}
 
-		return htmlPage.showCourses(_courses);
+		return htmlPage.showCourses(_connection);
 	}
 
 }

@@ -25,9 +25,12 @@ import static j2html.TagCreator.title;
 import static j2html.TagCreator.tr;
 import static j2html.TagCreator.ul;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 import ch.gmtech.ste.checker.Checker;
 import ch.gmtech.ste.seminar.Course;
@@ -154,22 +157,34 @@ public class HtmlPage{
 		return showView(formElement);
 	}
 
-	public String showCourses(List<Course> courses){
+	public String showCourses(Connection connection){
 		
 		ArrayList<DomContent> courseData = new ArrayList<DomContent>();
 
-		for(Course course : courses) {
-			courseData.add(
-					tr().with(
-					td(course.id().toString()),
-					th(course.name()).attr("scope", "row"),
-					td(course.location()),
-					td(course.seatsLeft().toString()),
-					td(course.getStartDate())
-				)
-			);
+		Statement statement;
+		try {
+			statement = connection.createStatement();
+			String query = "SELECT * FROM Course";
+			ResultSet result = statement.executeQuery(query);
+			
+			while (result.next()) {
+				courseData.add(
+						tr().with(
+						td(result.getString(1)),
+						th(result.getString(2)).attr("scope", "row"),
+						td(result.getString(3)),
+						td(result.getString(4)),
+						td(result.getString(5))
+					)
+				);
+				
+				System.out.println(result.getString(1) + ", " + result.getString(2) + ", "
+						+ result.getString(3));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
-		
+
 		DomContent courseElement = 
 		div().withClass("col-lg-8 col-md-8 col-sm-9").with(
 				table().withClass("table table-striped").with(
