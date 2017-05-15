@@ -57,10 +57,6 @@ public class Checker {
 		return _requestMap.get(Course.TOTAL_SEATS);
 	}
 
-	public String getCourseId() {
-		return _requestMap.get(Course.ID);
-	}
-
 	public String getDescritpion() {
 		return _requestMap.get(Course.DESCRIPTION);
 	}

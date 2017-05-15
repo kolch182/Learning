@@ -20,7 +20,6 @@ import ch.gmtech.ste.checker.TimeFormatRule;
 
 public class Course {
 	
-	public static final String ID = "courseid";
 	public static final String NAME = "name";
 	public static final String DESCRIPTION = "description";
 	public static final String LOCATION = "location";
@@ -44,7 +43,6 @@ public class Course {
 	
 	public static MultiValuedMap<String, Rule> rules(){
 		 return new ArrayListValuedHashMap<String, Rule>(){{
-			put(ID,         new NotEmptyRule());
 			putAll(NAME, 			  asList(new NotEmptyRule(), new MaxLengthRule(15)));
 			putAll(LOCATION, 	  asList(new NotEmptyRule(), new MaxLengthRule(20)));
 			putAll(TOTAL_SEATS, asList(new NumberRule(GREATER_THAN, 0), new NumberRule(LESS_THAN, 100), new MaxLengthRule(3)));

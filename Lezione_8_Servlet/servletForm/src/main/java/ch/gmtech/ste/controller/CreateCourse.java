@@ -58,18 +58,17 @@ public class CreateCourse implements Controller{
 			_response.getWriter().write(_view.showForm(checker));
 		}
 
-
 	}
 
 	private String createCourse(String name, String seats, String location, String description, String startDate) {
 
 		HtmlPage htmlPage = new HtmlPage();
-
+		
 		try {
 			Statement statement = _connection.createStatement();
 
 			statement.executeUpdate("insert into Course values(null, '" + name + "', '" + description + "', '" + location + 
-					"', '" + Integer.valueOf(seats) + "', '" + new SimpleDateFormat("dd.mm.yyyy").parse(startDate) + "')");
+					"', '" + Integer.valueOf(seats) + "', '" + startDate + "')");
 
 			_courses.add(new Course(name, description, new SimpleDateFormat("dd.mm.yyyy").parse(startDate), location, Integer.valueOf(seats)));
 		} catch (ParseException e) {

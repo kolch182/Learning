@@ -29,6 +29,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -121,7 +122,6 @@ public class HtmlPage{
 				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
 						form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
 								createValidatedInput("Name",checker.getCourseName(),"courseName","name","Course Name", checker.validate().get(Course.NAME)),
-								createValidatedInput("CourseId",checker.getCourseId(),"courseid","courseid","CourseId", checker.validate().get(Course.ID)),
 								createValidatedInput("TotalSeats",checker.getTotalSeats(),"seats","seats","TotalSeats", checker.validate().get(Course.TOTAL_SEATS)),
 								createValidatedInput("Location",checker.getLocation(),"location","location","Location",checker.validate().get(Course.LOCATION)),
 								createValidatedInput("Description",checker.getDescritpion(),"description","description","Description", checker.validate().get(Course.DESCRIPTION)),
@@ -142,7 +142,6 @@ public class HtmlPage{
 				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
 						form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
 								createEmptyInput("Name","courseName","name","Course Name"),
-								createEmptyInput("CourseId","courseid","courseid","CourseId"),
 								createEmptyInput("TotalSeats","seats","seats","TotalSeats"),
 								createEmptyInput("Location","location","location","Location"),
 								createEmptyInput("Description","description","description","Description"),
@@ -172,14 +171,11 @@ public class HtmlPage{
 						tr().with(
 						td(result.getString(1)),
 						th(result.getString(2)).attr("scope", "row"),
-						td(result.getString(3)),
 						td(result.getString(4)),
-						td(result.getString(5))
+						td(result.getString(5)),
+						td(result.getString(6))
 					)
 				);
-				
-				System.out.println(result.getString(1) + ", " + result.getString(2) + ", "
-						+ result.getString(3));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
