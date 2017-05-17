@@ -24,8 +24,10 @@ public class Course {
 	public static final String DESCRIPTION = "description";
 	public static final String LOCATION = "location";
 	public static final String TOTAL_SEATS = "seats";
+	public static final String ID = "id";
 	public static final String START = "startdate";
 	
+	private final Integer _id;
 	private final String _name;
 	private final Integer _seats;
 	private final String _description;
@@ -33,7 +35,8 @@ public class Course {
 	private final String _location;
 	private final List<Student> _students = new ArrayList<Student>();
 
-	public Course(String courseName, String description, Date startDate, String location, Integer seats) {
+	public Course(Integer id, String courseName, String description, Date startDate, String location, Integer seats) {
+		_id = id;
 		_name = courseName;
 		_description = description;
 		_startDate = startDate;
@@ -82,5 +85,9 @@ public class Course {
 
 	public List<Student> students() {
 		return _students;
+	}
+
+	public Integer getId() {
+		return _id;
 	}
 }

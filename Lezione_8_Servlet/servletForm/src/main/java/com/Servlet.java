@@ -3,7 +3,6 @@ package com;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,12 +18,10 @@ import org.apache.commons.lang3.StringUtils;
 import ch.gmtech.ste.controller.Controller;
 import ch.gmtech.ste.controller.CreateCourse;
 import ch.gmtech.ste.controller.ShowCourses;
-import ch.gmtech.ste.seminar.Course;
 
 @SuppressWarnings("serial")
 public class Servlet extends HttpServlet {
 
-	private ArrayList<Course> _courses;
 	private DataSource datasource;
 
 	public static final String SHOW_COURSES = "/course";
@@ -33,7 +30,6 @@ public class Servlet extends HttpServlet {
 
 	@Override
 	public void init() {
-		_courses = new ArrayList<Course>();
 		try {
 			datasource = (DataSource)new InitialContext().lookup("java:/comp/env/jdbc/seminar");
 		} catch (NamingException e) {
@@ -44,7 +40,7 @@ public class Servlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		Map<String,Controller> routes = new HashMap<String, Controller>();
-		routes.put(CREATE_COURSE, new CreateCourse(req, resp, _courses));
+		routes.put(CREATE_COURSE, new CreateCourse(req, resp));
 		routes.put(SHOW_COURSES, new ShowCourses(resp));
 		routes.put(ROOT, new ShowCourses(resp));
 		String requestURI = StringUtils.removeEnd(req.getRequestURI(), "/");
