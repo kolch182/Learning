@@ -30,7 +30,7 @@ public class SeminarTest {
 
 	@Test
 	public void testStudents() {
-		Course course = new Course("courseName", "description", _startDate, "Lugano", 20);
+		Course course = new Course(1, "courseName", "description", _startDate, "Lugano", 20);
 		assertEquals(0, course.students().size());
 
 		course.enroll(new Student("Pippo", "Pluto"));
@@ -39,7 +39,7 @@ public class SeminarTest {
 
 	@Test
 	public void dontEnrollTooMuchStudents() {
-		Course course = new Course("courseName", "description", _startDate, "Lugano", 1);
+		Course course = new Course(1, "courseName", "description", _startDate, "Lugano", 1);
 
 		assertTrue(course.enroll(new Student("Ugo", "Campione")));
 		assertFalse(course.enroll(new Student("Laggard", "Guy")));
