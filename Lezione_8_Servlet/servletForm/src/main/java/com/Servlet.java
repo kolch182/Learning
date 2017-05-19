@@ -50,9 +50,12 @@ public class Servlet extends HttpServlet {
 			connection = datasource.getConnection();
 			if (routes.containsKey(requestURI)) {
 				try {
+					connection.setAutoCommit(false);
 					routes.get(requestURI).execute(connection);
+					connection.commit();
 				} catch (Exception e) {
 					resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, e.getMessage());
+					connection.rollback();
 				}
 			} else {
 				resp.sendError(HttpServletResponse.SC_NOT_FOUND);
