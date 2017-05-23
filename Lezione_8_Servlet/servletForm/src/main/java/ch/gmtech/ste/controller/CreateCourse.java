@@ -27,7 +27,7 @@ public class CreateCourse implements Controller{
 	public void execute(Connection connection) throws Exception {
 		_connection = connection;
 		if ("POST".equals(_request.getMethod())) {
-			action();
+			evaluateInsertedData();
 		}
 		if ("GET".equals(_request.getMethod())) {
 			_response.setStatus(HttpServletResponse.SC_OK);
@@ -36,7 +36,7 @@ public class CreateCourse implements Controller{
 
 	}
 
-	private void action() throws Exception {
+	private void evaluateInsertedData() throws Exception {
 
 		Checker checker = new Checker(Course.rules(), _request);
 
@@ -49,7 +49,7 @@ public class CreateCourse implements Controller{
 
 			createCourse(courseName, courseTotalSeats, courseLocation, courseDescription, courseStartDate);
 			
-			new ShowCourses(_response).execute(_connection);;
+			new ShowCourses(_response).execute(_connection);
 		}else{
 			_response.getWriter().write(_view.showForm(checker));
 		}

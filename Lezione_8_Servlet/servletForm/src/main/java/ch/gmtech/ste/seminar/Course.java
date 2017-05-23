@@ -23,9 +23,9 @@ public class Course {
 	public static final String NAME = "name";
 	public static final String DESCRIPTION = "description";
 	public static final String LOCATION = "location";
-	public static final String TOTAL_SEATS = "seats";
+	public static final String TOTAL_SEATS = "totalSeats";
 	public static final String ID = "id";
-	public static final String START = "startdate";
+	public static final String START = "start";
 	
 	private final Integer _id;
 	private final String _name;
@@ -53,11 +53,11 @@ public class Course {
 		}};
 	}
 
-	public String description(){
+	public String getDescription(){
 		return _description;
 	}
 
-	public String name() {
+	public String getName() {
 		return _name;
 	}
 
@@ -66,11 +66,11 @@ public class Course {
 		return sdf.format(_startDate); 
 	}
 	
-	public String location() {
+	public String getLocation() {
 		return _location;
 	}
 
-	public Integer seatsLeft() {
+	public Integer getSeatsLeft() {
 		return _seats - _students.size();
 	}
 

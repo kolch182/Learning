@@ -27,6 +27,8 @@ import static j2html.TagCreator.ul;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
 
 import ch.gmtech.ste.checker.Checker;
 import ch.gmtech.ste.seminar.Course;
@@ -117,10 +119,10 @@ public class HtmlPage{
 				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
 						form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
 								createValidatedInput("Name",checker.getCourseName(),"courseName","name","Course Name", checker.validate().get(Course.NAME)),
-								createValidatedInput("TotalSeats",checker.getTotalSeats(),"seats","seats","TotalSeats", checker.validate().get(Course.TOTAL_SEATS)),
+								createValidatedInput("TotalSeats",checker.getTotalSeats(),"totalSeats","totalSeats","totalSeats", checker.validate().get(Course.TOTAL_SEATS)),
 								createValidatedInput("Location",checker.getLocation(),"location","location","Location",checker.validate().get(Course.LOCATION)),
 								createValidatedInput("Description",checker.getDescritpion(),"description","description","Description", checker.validate().get(Course.DESCRIPTION)),
-								createValidatedInput("StartDate",checker.getStartDate(),"startdate","startdate","StartDate", checker.validate().get(Course.START)),
+								createValidatedInput("StartDate",checker.getStartDate(),"start","start","Start", checker.validate().get(Course.START)),
 								createSubmit(),
 								script().withSrc("/js/jquery.min.js"),
 								script().withSrc("/js/bootstrap.min.js")
@@ -133,59 +135,62 @@ public class HtmlPage{
 
 	public String showForm(){
 
-		DomContent formElement = 
-				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
-						form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
-								createEmptyInput("Name","courseName","name","Course Name"),
-								createEmptyInput("TotalSeats","seats","seats","TotalSeats"),
-								createEmptyInput("Location","location","location","Location"),
-								createEmptyInput("Description","description","description","Description"),
-								createEmptyInput("StartDate","startdate","startdate","StartDate"),
-								createSubmit(),
-								script().withSrc("/js/jquery.min.js"),
-								script().withSrc("/js/bootstrap.min.js")
-								)
+		return showView(div().withClass("col-lg-8 col-md-8 col-sm-9").with(
+				form().withAction("/course/create").withClass("form-horizontal").withMethod("post").with(
+						createInput("Name","courseName","name","Course Name",""),
+						createInput("TotalSeats","totalSeats","totalSeats","totalSeats",""),
+						createInput("Location","location","location","Location",""),
+						createInput("Description","description","description","Description",""),
+						createInput("StartDate","start","start","Start",""),
+						createSubmit(),
+						script().withSrc("/js/jquery.min.js"),
+						script().withSrc("/js/bootstrap.min.js")
 						)
-				;
-
-		return showView(formElement);
+				));
 	}
 
-	public String showCourses(ArrayList<Course> _courses){
-
-		ArrayList<DomContent> courseData = new ArrayList<DomContent>();
-
-
-		for(Course course : _courses) {
-			courseData.add(
-				tr().with(
-					td(course.getId().toString()),
-					th(course.name()).attr("scope", "row"),
-					td(course.location()),
-					td(course.seatsLeft().toString()),
-					td(course.getStartDate())
+	public String showCourses(List<Course> _courses){
+		return showView(
+					div().withClass("col-lg-8 col-md-8 col-sm-9").with(
+						table().withClass("table table-striped").with(
+							thead().with(
+								showCoursesHeader()
+							),
+							tbody().with(
+								showCoursesContent(_courses))
+							)
 					)
 				);
+	}
+
+	private ContainerTag showCoursesHeader() {
+		return tr().with(
+				th("id"),
+				th("name"),
+				th("location"),
+				th("totalSeats"),
+				th("start")
+				);
+	}
+
+	private List<DomContent> showCoursesContent(List<Course> _courses) {
+		List<DomContent> courseData = new ArrayList<DomContent>();
+		for(Course course : _courses) {
+			courseData.add(
+				showOneCourse(course)
+				);
 		}
+		return courseData;
+	}
 
-		DomContent courseElement = 
-				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
-					table().withClass("table table-striped").with(
-						thead().with(
-							tr().with(
-									th("id"),
-									th("name"),
-									th("location"),
-									th("totalSeats"),
-									th("start")
-									)
-							),
-						tbody().with(courseData)
-						)
-					)
-				;
-
-		return showView(courseElement);
+	private ContainerTag showOneCourse(Course course) {
+		return tr().with(
+			td(course.getId().toString()),
+			th().attr("scope", "row").with(a(course.getName()).withHref("course/" + course.getId())),
+			td(course.getLocation()),
+			td(course.getSeatsLeft().toString()),
+			td(course.getStartDate())
+			);
 	}
 
 	private ContainerTag createSubmit() {
@@ -200,7 +205,7 @@ public class HtmlPage{
 				);
 	}
 
-	private ContainerTag createEmptyInput(String label, String id, String name, String placeHolder ) {
+	private ContainerTag createInput(String label, String id, String name, String placeHolder, String value ) {
 		return div().withClass("form-group").with( 
 				label(label).withClass("col-sm-2 control-label"),
 				div().withClass("col-sm-10").with(
@@ -210,12 +215,12 @@ public class HtmlPage{
 						.withId(id)
 						.withName(name)
 						.withPlaceholder(placeHolder)
+						.withValue(value)
 						)
 				);
 	}
 
 	private ContainerTag createValidatedInput(String label, String value, String id, String name, String placeHolder, Collection<String> messages ) {
-
 		ContainerTag input = div().withClass("col-sm-10").with(
 				input()
 				.withType("text")
@@ -236,6 +241,25 @@ public class HtmlPage{
 				label(label).withClass("col-sm-2 control-label"),
 				input
 				);
+	}
+
+	public String updateCourse(HashMap<String, String> row) {
+		DomContent formElement = 
+				div().withClass("col-lg-8 col-md-8 col-sm-9").with(
+						form().withAction("/course/" + row.get("id")).withClass("form-horizontal").withMethod("post").with(
+								createInput("Name","courseName","name","Course Name", row.get("name")),
+								createInput("TotalSeats","totalSeats","totalSeats","TotalSeats",row.get("totalSeats")),
+								createInput("Location","location","location","Location",row.get("location")),
+								createInput("Description","description","description","Description",row.get("description")),
+								createInput("StartDate","start","start","Start",row.get("start")),
+								createSubmit(),
+								script().withSrc("/js/jquery.min.js"),
+								script().withSrc("/js/bootstrap.min.js")
+								)
+						)
+				;
+
+		return showView(formElement);
 	}
 
 }

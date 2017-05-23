@@ -22,6 +22,11 @@ public class Checker {
 		_requestMap = requestMap(request);
 	}
 	
+	public Checker(MultiValuedMap<String, Rule> rules, HashMap<String, String> row) {
+		_rules = rules;
+		_requestMap = row;
+	}
+
 	public MultiValuedMap<String, String> validate(){
 		MultiValuedMap<String, String> errors = new HashSetValuedHashMap<String, String>();
 		for (Entry<String, Collection<Rule>> pair: new HashMap<String, Collection<Rule>>(_rules.asMap()).entrySet()) {
