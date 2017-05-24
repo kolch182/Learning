@@ -28,6 +28,7 @@ public class Servlet extends HttpServlet {
 	public static final String SHOW_COURSES = "/course";
 	public static final String UPDATE_COURSE = "/course/id";
 	public static final String CREATE_COURSE = "/course/create";
+	public static final String DELETE_COURSE = "/course/delete/id";
 	public static final String ROOT = "";
 
 	@Override
@@ -45,6 +46,7 @@ public class Servlet extends HttpServlet {
 		routes.put(CREATE_COURSE, new CreateCourse(req, resp));
 		routes.put(SHOW_COURSES, new ShowCourses(resp));
 		routes.put(UPDATE_COURSE, new UpdateCourse(resp, req));
+		routes.put(DELETE_COURSE, new DeleteCourse(resp, req));
 		routes.put(ROOT, new ShowCourses(resp));
 		String requestURI = StringUtils.removeEnd(req.getRequestURI(), "/").replaceAll("\\d+", "id");
 
