@@ -32,9 +32,8 @@ public class DeleteCourse implements Controller {
 		String queryCourseId;
 
 		if ("GET".equals(_request.getMethod())) {
-			if(_request.getParameter("confirm") == "true"){
-				System.out.println("POST " + _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1));
-				
+			if("true".equals(_request.getParameter("confirm"))){
+
 				try {
 					queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
 					statement = _connection.createStatement();
@@ -44,24 +43,24 @@ public class DeleteCourse implements Controller {
 					e.printStackTrace();
 				}
 				_response.sendRedirect(Servlet.SHOW_COURSES);
-			}
-			
-			System.out.println("GET " + _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1));
-			try {
-				queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
+			} else {
 
-				statement = _connection.createStatement();
-				String query = "SELECT * FROM Course where id = " + queryCourseId;
-				ResultSet result = statement.executeQuery(query);
+				try {
+					queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
 
-				Course course = new Course(result.getInt(1), result.getString(2),result.getString(3),  
-						new SimpleDateFormat("dd.mm.yyyy").parse(result.getString(6)), result.getString(4), result.getInt(5));
+					statement = _connection.createStatement();
+					String query = "SELECT * FROM Course where id = " + queryCourseId;
+					ResultSet result = statement.executeQuery(query);
 
-				_response.setStatus(HttpServletResponse.SC_OK);
-				_response.getWriter().write(_view.deleteCourse(course));
+					Course course = new Course(result.getInt(1), result.getString(2),result.getString(3),  
+							new SimpleDateFormat("dd.mm.yyyy").parse(result.getString(6)), result.getString(4), result.getInt(5));
 
-			}catch (SQLException e) {
-				e.printStackTrace();
+					_response.setStatus(HttpServletResponse.SC_OK);
+					_response.getWriter().write(_view.deleteCourse(course));
+
+				}catch (SQLException e) {
+					e.printStackTrace();
+				}
 			}
 
 		}
