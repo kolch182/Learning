@@ -17,6 +17,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import ch.gmtech.ste.controller.Controller;
 import ch.gmtech.ste.controller.CreateCourse;
+import ch.gmtech.ste.controller.DeleteCourse;
 import ch.gmtech.ste.controller.UpdateCourse;
 import ch.gmtech.ste.controller.ShowCourses;
 

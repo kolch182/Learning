@@ -150,7 +150,7 @@ public class HtmlPage{
 				));
 	}
 
-	public String showCourses(List<Course> _courses){
+	public String showCourses(Iterable<Course> _courses){
 		return showView(
 					div().withClass("col-lg-8 col-md-8 col-sm-9").with(
 						table().withClass("table table-striped").with(
@@ -197,7 +197,7 @@ public class HtmlPage{
 				);
 	}
 
-	private List<DomContent> showCoursesContent(List<Course> _courses) {
+	private List<DomContent> showCoursesContent(Iterable<Course> _courses) {
 		List<DomContent> courseData = new ArrayList<DomContent>();
 		for(Course course : _courses) {
 			courseData.add(

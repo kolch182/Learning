@@ -1,4 +1,4 @@
-package com;
+package ch.gmtech.ste.controller;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -9,7 +9,8 @@ import java.text.SimpleDateFormat;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import ch.gmtech.ste.controller.Controller;
+import com.Servlet;
+
 import ch.gmtech.ste.seminar.Course;
 import ch.gmtech.ste.view.HtmlPage;
 
