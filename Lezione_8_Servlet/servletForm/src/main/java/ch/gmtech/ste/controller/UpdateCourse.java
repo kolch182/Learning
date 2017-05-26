@@ -1,8 +1,6 @@
 package ch.gmtech.ste.controller;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashMap;
@@ -13,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.Servlet;
 
 import ch.gmtech.ste.checker.Checker;
+import ch.gmtech.ste.database.CourseDatabase;
 import ch.gmtech.ste.seminar.Course;
 import ch.gmtech.ste.view.HtmlPage;
 
@@ -31,33 +30,14 @@ public class UpdateCourse implements Controller{
 	@Override
 	public void execute(Connection connection) throws Exception {
 
-		Statement statement;
 		_connection = connection;
 
 		if ("GET".equals(_request.getMethod())) {
-			try {
-				HashMap<String, String> row = new HashMap<String, String>();
-				String queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
-				
-				statement = _connection.createStatement();
-				String query = "SELECT * FROM Course where id = " + queryCourseId;
-				ResultSet result = statement.executeQuery(query);
-				ResultSetMetaData md = result.getMetaData();
-				int columns = md.getColumnCount();
+			String queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
+			HashMap<String, String> row = new CourseDatabase(_connection).findById(queryCourseId);
 
-				while (result.next()) {
-					for (int i = 1; i <= columns; i++) {
-						row.put(md.getColumnName(i), result.getString((i)));
-					}
-				}
-				
-				_response.setStatus(HttpServletResponse.SC_OK);
-				_response.getWriter().write(_view.updateCourse(row));
-
-			}catch (SQLException e) {
-				e.printStackTrace();
-			}
-
+			_response.setStatus(HttpServletResponse.SC_OK);
+			_response.getWriter().write(_view.updateCourse(row));
 		}
 
 		if ("POST".equals(_request.getMethod())) {

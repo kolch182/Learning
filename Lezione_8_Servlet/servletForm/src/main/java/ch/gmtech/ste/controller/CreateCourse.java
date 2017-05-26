@@ -1,13 +1,12 @@
 package ch.gmtech.ste.controller;
 
 import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import ch.gmtech.ste.checker.Checker;
+import ch.gmtech.ste.database.CourseDatabase;
 import ch.gmtech.ste.seminar.Course;
 import ch.gmtech.ste.view.HtmlPage;
 
@@ -47,7 +46,7 @@ public class CreateCourse implements Controller{
 			String courseTotalSeats = _request.getParameter(Course.TOTAL_SEATS).isEmpty() ? "0" : _request.getParameter(Course.TOTAL_SEATS);
 			String courseDescription = _request.getParameter(Course.DESCRIPTION);
 
-			createCourse(courseName, courseTotalSeats, courseLocation, courseDescription, courseStartDate);
+			new CourseDatabase(_connection).insert(courseName, courseTotalSeats, courseLocation, courseDescription, courseStartDate);
 			
 			new ShowCourses(_response).execute(_connection);
 		}else{
@@ -55,18 +54,4 @@ public class CreateCourse implements Controller{
 		}
 
 	}
-
-	private void createCourse(String name, String seats, String location, String description, String startDate) {
-
-		try {
-			Statement statement = _connection.createStatement();
-
-			statement.executeUpdate("insert into Course values(null, '" + name + "', '" + description + "', '" + location + 
-					"', '" + Integer.valueOf(seats) + "', '" + startDate + "')");
-		}
-			catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-
 }
