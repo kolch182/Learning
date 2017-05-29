@@ -166,27 +166,6 @@ public class HtmlPage{
 				);
 	}
 
-//	private ContainerTag createTrashButton() {
-//		return div().withId("confirm-delete").withClass("modal fade").withRole("dialog").with(
-//			div().withClass("modal-dialog").with(
-//				div().withClass("modal-content").with(
-//					div().withClass("modal-header").with(
-//						button().withType("button").withClass("close").attr("data-dismiss", "modal"),
-//						h1("Confirm Delete").withClass("modal-title")
-//					),
-//					div().withClass("modal-body").with(
-//						p("You are about to delete one track, this procedure is irreversible."),
-//						p("Do you want to proceed?")
-//					),
-//					div().withClass("modal-footer").with(
-//						button("Cancel").withType("button").withClass("btn btn-default").attr("data-dismiss", "modal"),
-//						a("Delete").withClass("btn btn-danger btn-ok").withHref("/course/delete/id")
-//					)
-//				)
-//			)
-//		);
-//	}
-
 	private ContainerTag showCoursesHeader() {
 		return tr().with(
 				th("action"),
@@ -293,31 +272,52 @@ public class HtmlPage{
 		return showView(formElement);
 	}
 
-	public String deleteCourse(Course course) {
-		return showView(
-			div().withClass("col-lg-8 col-md-8 col-sm-9").with(
-					p("Are you sure you want to delete the following course?").withClass("lead"),
-					table().withClass("table table-striped").with(
-						thead().with(
-							tr().with(
-								th("name"),
-								th("location"),
-								th("totalSeats"),
-								th("start")
-							)
-						),
-						tbody().with(
-							tr().with(
-								th().attr("scope", "row").with(a(course.getName()).withHref("course/" + course.getId())),
-								td(course.getLocation()),
-								td(course.getSeatsLeft().toString()),
-								td(course.getStartDate())
-							)
-						)
-					),
-					a("Delete").withHref("/course/delete/" + course.getId() + "?confirm=true").withClass("btn btn-primary btn-sm").withMethod("post")
-				)
-		);
-	}
+//	public String deleteCourse(Course course) {
+//		return showView(
+//			div().withClass("col-lg-8 col-md-8 col-sm-9").with(
+//					p("Are you sure you want to delete the following course?").withClass("lead"),
+//					table().withClass("table table-striped").with(
+//						thead().with(
+//							tr().with(
+//								th("name"),
+//								th("location"),
+//								th("totalSeats"),
+//								th("start")
+//							)
+//						),
+//						tbody().with(
+//							tr().with(
+//								th().attr("scope", "row").with(a(course.getName()).withHref("course/" + course.getId())),
+//								td(course.getLocation()),
+//								td(course.getSeatsLeft().toString()),
+//								td(course.getStartDate())
+//							)
+//						)
+//					),
+//					a("Delete").withHref("/course/delete/" + course.getId() + "?confirm=true").withClass("btn btn-primary btn-sm").withMethod("post")
+//				)
+//		);
+//	}
+
+//	private ContainerTag createTrashButton() {
+//	return div().withId("confirm-delete").withClass("modal fade").withRole("dialog").with(
+//		div().withClass("modal-dialog").with(
+//			div().withClass("modal-content").with(
+//				div().withClass("modal-header").with(
+//					button().withType("button").withClass("close").attr("data-dismiss", "modal"),
+//					h1("Confirm Delete").withClass("modal-title")
+//				),
+//				div().withClass("modal-body").with(
+//					p("You are about to delete one track, this procedure is irreversible."),
+//					p("Do you want to proceed?")
+//				),
+//				div().withClass("modal-footer").with(
+//					button("Cancel").withType("button").withClass("btn btn-default").attr("data-dismiss", "modal"),
+//					a("Delete").withClass("btn btn-danger btn-ok").withHref("/course/delete/id")
+//				)
+//			)
+//		)
+//	);
+//}
 
 }

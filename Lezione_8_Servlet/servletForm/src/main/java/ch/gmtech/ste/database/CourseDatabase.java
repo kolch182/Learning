@@ -22,22 +22,6 @@ public class CourseDatabase {
 		_connection = connection;
 	}
 	
-	public void insert(String name, String seats, String location, String description, String startDate){
-		try {
-			PreparedStatement ps = _connection.prepareStatement("insert into Course (name, description, location, totalSeats, start) values (?,?,?,?,?)");
-			ps.setObject(1, name);
-			ps.setObject(2, description);
-			ps.setObject(3, location);
-			ps.setObject(4, seats);
-			ps.setObject(5, startDate);
-			
-			ps.executeUpdate();
-			ps.close();
-		} catch (SQLException e) {
-			throw new RuntimeException(e);
-		}
-	}
-
 	public Iterable<Course> findAll() {
 		List<Course> courses = null;
 		try {
@@ -83,6 +67,20 @@ public class CourseDatabase {
 			}
 			statement.close();
 			rs.close();
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return row;
+	}
+
+	public HashMap<String, String> insertOrUpdate(String courseId, String name, String seats, String location, String description, String startDate) {
+		HashMap<String, String> row = new HashMap<String, String>();
+		Statement statement;
+		try {
+			statement = _connection.createStatement();
+			statement.executeUpdate("INSERT OR REPLACE INTO Course values(" + courseId + ", '" + name + "', '" + description + "', '" + location + 
+					"', '" + Integer.valueOf(seats) + "', '" + startDate + "')");
+			statement.close();
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

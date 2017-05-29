@@ -18,7 +18,7 @@ public class SeminarTest {
 	
 	@Before
 	public void initDate() {
-		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd.mm.yyyy");
 		try {
 			_startDate = sdf.parse("01.10.2016");
 		} catch (ParseException e) {

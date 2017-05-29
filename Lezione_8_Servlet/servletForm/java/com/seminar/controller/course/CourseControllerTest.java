@@ -87,6 +87,6 @@ public class CourseControllerTest {
 		
 		assertThat(_response.content(), containsString("can't be empty"));
 		assertThat(_response.content(), containsString("must be a number"));
-		assertThat(_response.content(), containsString("must have dd.MM.yyyy format"));
+		assertThat(_response.content(), containsString("must have dd.mm.yyyy format"));
 	}
 }

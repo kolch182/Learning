@@ -49,7 +49,7 @@ public class Course {
 			putAll(NAME, 			  asList(new NotEmptyRule(), new MaxLengthRule(15)));
 			putAll(LOCATION, 	  asList(new NotEmptyRule(), new MaxLengthRule(20)));
 			putAll(TOTAL_SEATS, asList(new NumberRule(GREATER_THAN, 0), new NumberRule(LESS_THAN, 100), new MaxLengthRule(3)));
-			put(START, 				  new TimeFormatRule("dd.MM.yyyy"));
+			put(START, 				  new TimeFormatRule("dd.mm.yyyy"));
 		}};
 	}
 
@@ -62,7 +62,7 @@ public class Course {
 	}
 
 	public String getStartDate() {
-		SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd.mm.yyyy");
 		return sdf.format(_startDate); 
 	}
 	

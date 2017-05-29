@@ -32,41 +32,36 @@ public class DeleteCourse implements Controller {
 		_connection = connection;
 		String queryCourseId;
 
-		if ("GET".equals(_request.getMethod())) {
-			if("true".equals(_request.getParameter("confirm"))){
+//		if("true".equals(_request.getParameter("confirm"))){
 
-				try {
-					queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
-					statement = _connection.createStatement();
-					statement.executeUpdate("delete from Course where id = " + queryCourseId);
-				}
-				catch (SQLException e) {
-					e.printStackTrace();
-				}
-				_response.sendRedirect(Servlet.SHOW_COURSES);
-			} else {
-
-				try {
-					queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
-
-					statement = _connection.createStatement();
-					String query = "SELECT * FROM Course where id = " + queryCourseId;
-					ResultSet result = statement.executeQuery(query);
-
-					Course course = new Course(result.getInt(1), result.getString(2),result.getString(3),  
-							new SimpleDateFormat("dd.mm.yyyy").parse(result.getString(6)), result.getString(4), result.getInt(5));
-
-					_response.setStatus(HttpServletResponse.SC_OK);
-					_response.getWriter().write(_view.deleteCourse(course));
-
-				}catch (SQLException e) {
-					e.printStackTrace();
-				}
+			try {
+				queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
+				statement = _connection.createStatement();
+				statement.executeUpdate("delete from Course where id = " + queryCourseId);
 			}
-
-		}
-
-
+			catch (SQLException e) {
+				e.printStackTrace();
+			}
+			_response.sendRedirect(Servlet.SHOW_COURSES);
+//		} else {
+//
+//			try {
+//				queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
+//
+//				statement = _connection.createStatement();
+//				String query = "SELECT * FROM Course where id = " + queryCourseId;
+//				ResultSet result = statement.executeQuery(query);
+//
+//				Course course = new Course(result.getInt(1), result.getString(2),result.getString(3),  
+//						new SimpleDateFormat("dd.mm.yyyy").parse(result.getString(6)), result.getString(4), result.getInt(5));
+//
+//				_response.setStatus(HttpServletResponse.SC_OK);
+//				_response.getWriter().write(_view.deleteCourse(course));
+//
+//			}catch (SQLException e) {
+//				e.printStackTrace();
+//			}
+//		}
 	}
 
 }
