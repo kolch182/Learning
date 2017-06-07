@@ -15,7 +15,7 @@ import ch.gmtech.ste.database.CourseDatabase;
 import ch.gmtech.ste.seminar.Course;
 import ch.gmtech.ste.view.HtmlPage;
 
-public class CreateCourse implements Controller{
+public class CreateOrUpdateCourse implements Controller{
 
 	private final HttpServletRequest _request;
 	private final HttpServletResponse _response;
@@ -23,7 +23,7 @@ public class CreateCourse implements Controller{
 	private Connection _connection;
 	private String queryCourseId = null;
 
-	public CreateCourse(HttpServletRequest request, HttpServletResponse response) {
+	public CreateOrUpdateCourse(HttpServletRequest request, HttpServletResponse response) {
 		_request = request;
 		_response = response;
 	}

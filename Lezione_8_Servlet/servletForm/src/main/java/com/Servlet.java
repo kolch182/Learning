@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 import org.apache.commons.lang3.StringUtils;
 
 import ch.gmtech.ste.controller.Controller;
-import ch.gmtech.ste.controller.CreateCourse;
+import ch.gmtech.ste.controller.CreateOrUpdateCourse;
 import ch.gmtech.ste.controller.DeleteCourse;
 import ch.gmtech.ste.controller.ShowCourses;
 
@@ -43,9 +43,9 @@ public class Servlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		Map<String,Controller> routes = new HashMap<String, Controller>();
-		routes.put(CREATE_COURSE, new CreateCourse(req, resp));
+		routes.put(CREATE_COURSE, new CreateOrUpdateCourse(req, resp));
 		routes.put(SHOW_COURSES, new ShowCourses(resp));
-		routes.put(UPDATE_COURSE, new CreateCourse(req, resp));
+		routes.put(UPDATE_COURSE, new CreateOrUpdateCourse(req, resp));
 		routes.put(DELETE_COURSE, new DeleteCourse(resp, req));
 		routes.put(ROOT, new ShowCourses(resp));
 		String requestURI = StringUtils.removeEnd(req.getRequestURI(), "/").replaceAll("\\d+", "id");
