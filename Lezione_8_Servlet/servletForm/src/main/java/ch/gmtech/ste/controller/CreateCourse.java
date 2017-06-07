@@ -39,6 +39,7 @@ public class CreateCourse implements Controller{
 			
 			if(isUpdate(queryCourseId)){
 				HashMap<String, String> row = new CourseDatabase(_connection).findById(queryCourseId);
+				if(row.isEmpty()) _response.sendError(HttpServletResponse.SC_NOT_FOUND);
 				_response.setStatus(HttpServletResponse.SC_OK);
 				_response.getWriter().write(_view.updateCourse(row));
 			}else {

@@ -5,12 +5,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.Servlet;
 
+import ch.gmtech.ste.database.CourseDatabase;
 import ch.gmtech.ste.seminar.Course;
 import ch.gmtech.ste.view.HtmlPage;
 
@@ -36,6 +38,8 @@ public class DeleteCourse implements Controller {
 
 			try {
 				queryCourseId = _request.getRequestURI().substring(_request.getRequestURI().lastIndexOf("/") + 1);
+				HashMap<String, String> row = new CourseDatabase(_connection).findById(queryCourseId);
+				if(row.isEmpty()) _response.sendError(HttpServletResponse.SC_NOT_FOUND);
 				statement = _connection.createStatement();
 				statement.executeUpdate("delete from Course where id = " + queryCourseId);
 			}
